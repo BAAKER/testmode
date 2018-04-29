@@ -33,8 +33,78 @@ division_template = {
 	}
 }
 
-###тут скоро должны быть армии, флотилии и авиация###
+###армии###
 
+division= {	
+		name = "1. Allgemeine Division" 
+		location = 6332
+		division_template = "Allgemeine Division" 
+		start_experience_factor = 0.3
+	}
+	
+division= {	
+		name = "2. Allgemeine Division" 
+		location = 6282
+		division_template = "Allgemeine Division" 
+		start_experience_factor = 0.3
+	}	
+
+division= {	
+		name = "3. Allgemeine Division" 
+		location = 6521
+		division_template = "Allgemeine Division" 
+		start_experience_factor = 0.3
+	}
+	
+division= {	
+		name = "4. Allgemeine Division" 
+		location = 514
+		division_template = "Allgemeine Division" 
+		start_experience_factor = 0.3
+	}
+
+division= {	
+		name = "5. Allgemeine Division" 
+		location = 9517
+		division_template = "Allgemeine Division" 
+		start_experience_factor = 0.3
+	}
+
+division= {	
+		name = "6. Allgemeine Division" 
+		location = 266
+		division_template = "Allgemeine Division" 
+		start_experience_factor = 0.3
+	}
+
+division= {	
+		name = "7. Allgemeine Division" 
+		location = 3705
+		division_template = "Allgemeine Division" 
+		start_experience_factor = 0.3
+	}
+
+division= {	
+		name = "1. Kavallerie-Division" 
+		location = 9456
+		division_template = "Kavallerie-Division" 
+		start_experience_factor = 0.3
+	}
+
+division= {	
+		name = "2. Kavallerie-Division" 
+		location = 9570
+		division_template = "Kavallerie-Division" 
+		start_experience_factor = 0.3
+	}
+
+division= {	
+		name = "3. Kavallerie-Division" 
+		location = 482
+		division_template = "Kavallerie-Division" 
+		start_experience_factor = 0.3
+	}
+	
 #########################
 ## STARTING PRODUCTION ##
 #########################
