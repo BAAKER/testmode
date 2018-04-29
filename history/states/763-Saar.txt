@@ -1,0 +1,21 @@
+state={
+	id=763
+	name="STATE_763"
+	manpower=1845000
+	state_category = large_city
+	
+	history = {
+		owner = SAA
+		victory_points = {
+			11531 10
+		}
+		buildings = {
+			infrastructure = 7
+		}
+		add_core_of = GER
+	}
+	provinces={
+		563 3423 9575 11531 11547 
+	}
+	
+}
