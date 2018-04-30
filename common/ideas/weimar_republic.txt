@@ -21,8 +21,9 @@ ideas = {
 		}
 		
 		antanta_occupation = {
+		
 			allowed = {
-				always_no
+				always = no
 			}
 
 			allowed_civil_war = {
