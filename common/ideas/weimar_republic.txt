@@ -21,9 +21,8 @@ ideas = {
 		}
 		
 		antanta_occupation = {
-		
 			allowed = {
-				always = no
+				always_no
 			}
 
 			allowed_civil_war = {
@@ -35,8 +34,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				add_stability = -0.05
-				add_war_support = -0.05
+				stability_factor = -0.05
+				war_support_factor = -0.05
 			}
 				
 		}
@@ -1031,4 +1030,5 @@ ideas = {
 
 
 
-}
+	}
+
