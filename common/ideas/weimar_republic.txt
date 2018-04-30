@@ -1,7 +1,7 @@
 ideas = {
 
 	country = {
-		GER_sour_loser = {
+		sour_loser = {
 			
 			allowed = {
 				always = no
@@ -20,7 +20,7 @@ ideas = {
 		
 		}
 		
-		GER_antanta_occupation = {
+		antanta_occupation = {
 		
 			allowed = {
 				always = no
