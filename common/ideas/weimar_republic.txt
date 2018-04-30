@@ -41,6 +41,27 @@ ideas = {
 				
 		}
 		
+		payment_of_reparations = {
+		
+		allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_generic_license_production
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = -0.1
+				line_change_production_efficiency_factor = -0.2
+			}
+			
+		}
+		
 		
 		
 		
