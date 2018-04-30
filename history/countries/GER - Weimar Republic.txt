@@ -53,8 +53,8 @@ set_stability = 0.5
 set_war_support = 0.2
 
 add_ideas = {
-	antanta_occupation
-	sour_loser
+	GER_antanta_occupation
+	GER_sour_loser
 }
 
 
