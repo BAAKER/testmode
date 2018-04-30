@@ -30,7 +30,7 @@ ideas = {
 				always = yes
 			}
 			
-			picture = FRA_matignon_agreements.dds
+			picture = FRA_matignon_agreements
 
 			removal_cost = -1
 			
