@@ -20,7 +20,7 @@ focus_tree = {
                  x = 3
                  y = 0
                  cost = 10
-                 completrion_reward = {          
+                 completion_reward = {          
                         swap_ideas = {
 						remove_idea = payment_of_reparations
 						add_idea = payment_of_reparations2
@@ -36,11 +36,31 @@ focus_tree = {
                  x = 14
                  y = 0
                  cost = 10
-                 completrion_reward = {          
-                        political_power_factor = 1.2
+                 completion_reward = {          
+						add_political_power = 120
+						add_stability = 0.05
                  }
              }
-         }
+		 
+	focus = { 
+                 id = GER_amnesty
+                 icon = GFX_goal_generic_cavalry
+				 prerequisite = {
+					focus = ger_form_goverement
+				 }
+                 x = 14
+                 y = 1
+                 cost = 5
+                 completion_reward = {          
+						add_political_power = 50
+                 }
+             }
+			 
+			 
+			 
+			 
+			 
+         }	 
 
 
 

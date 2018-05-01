@@ -49,7 +49,7 @@ set_variable = { var = wehrmacht_anger value = 0 }
 set_variable = { var = ss_anger value = 0 }
 set_research_slots = 3
 set_convoys = 50
-set_stability = 0.5 
+set_stability = 0.4 
 set_war_support = 0.2
 
 add_ideas = {
