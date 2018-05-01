@@ -83,6 +83,26 @@ ideas = {
 			
 		}
 		
+		bayern_bear = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = rom_carol_ii_hedonist
+
+			removal_cost = -1
+			
+			modifier = {
+				line_change_production_efficiency_factor = -0.05
+				stability_factor = 0.05
+			}
+		}
+		
 		
 		
 		
