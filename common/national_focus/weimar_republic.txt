@@ -11,3 +11,38 @@ focus_tree = {
 	}
 	
 	default = no
+	
+	#ПРОМЫШЛЕННАЯ ВЕТКА#
+	
+	focus = { 
+                 id = GER_investors
+                 icon = GFX_goal_generic_consumer_goods
+                 x = 3
+                 y = 0
+                 cost = 10
+                 completrion_reward = {          
+                        swap_ideas = {
+						remove_idea = payment_of_reparations
+						add_idea = payment_of_reparations2
+                 }
+             }
+         }
+		 
+	#ПОЛИТИЧЕСКАЯ ВЕТКА#
+
+	focus = { 
+                 id = GER_form_goverement
+                 icon = GFX_goal_support_democracy
+                 x = 14
+                 y = 0
+                 cost = 10
+                 completrion_reward = {          
+                        political_power_factor = 1.2
+                 }
+             }
+         }
+
+
+
+
+		 
