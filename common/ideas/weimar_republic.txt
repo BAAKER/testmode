@@ -151,12 +151,12 @@ ideas = {
 				always = yes
 			}
 			
-			picture = пикча
+			picture = idea_hun_secret_rearmament
 			
 			removal_cost = -1
 			
 			modifier = {
-				conscription_factor	= -0.008
+				conscription = -0.008
 				army_org = -10
 				industrial_capacity_factory = -0.2
 				industrial_capacity_dockyard = -0.2
@@ -173,12 +173,12 @@ ideas = {
 				always = yes
 			}
 			
-			picture = пикча
+			picture = idea_hun_secret_rearmament
 			
 			removal_cost = -1
 			
 			modifier = {
-				conscription_factor	= -0.007
+				conscription	= -0.007
 				army_org = -5
 				industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard = -0.1
