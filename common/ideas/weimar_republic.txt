@@ -93,7 +93,7 @@ ideas = {
 				always = yes
 			}
 			
-			picture = rom_carol_ii_hedonist
+			picture = ROM_king_carol_ii_hedonist
 
 			removal_cost = -1
 			
