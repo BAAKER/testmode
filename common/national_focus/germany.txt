@@ -229,6 +229,9 @@ focus_tree = {
 		prerequisite = {
 			focus = ger_military_factrories
 		}
+		completion_reward = {
+			add_ideas = weimar_science
+		}
 		x = 1
 		y = 4
 
@@ -515,6 +518,9 @@ focus_tree = {
 		prerequisite = {
 			focus = ger_science
 		}
+		completion_reward = {
+			add_research_slot = 1
+		}
 		x = 1
 		y = 5
 
@@ -530,6 +536,12 @@ focus_tree = {
 		prerequisite = {
 			focus = ger_building2
 		}
+		completion_reward = {
+			swap_ideas = { 
+			remove_idea = weimar_science
+			add_idea = weimar_science2
+			} 
+		}
 		x = 3
 		y = 5
 
@@ -541,6 +553,13 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = ger_science2
+		}
+		completion_reward = {
+			add_tech_bonus = {
+			bonus = 0.75
+			uses = 2
+			category = synth_resources
+			}
 		}
 		x = 3
 		y = 6
