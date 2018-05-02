@@ -141,7 +141,49 @@ ideas = {
 			}
 		}
 		
+		army_limit = {
 		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = пикча
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor	= -0.008
+				army_org = -10
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+			}
+		}
+		
+		army_limit2 = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = пикча
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor	= -0.007
+				army_org = -5
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+			}
+		}
 		
 		
 		

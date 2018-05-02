@@ -243,6 +243,7 @@ set_politics = {
 
 add_ideas = {
 	sour_loser
+	army_limit
 	payment_of_reparations
 }
 

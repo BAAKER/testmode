@@ -41,6 +41,12 @@ focus_tree = {
 		id = ger_secret_rearm
 		icon = GFX_goal_generic_amphibious_assault
 		cost = 10
+		completion_reward = {
+			swap_ideas = { 
+			remove_idea = army_limit 
+			add_idea = army_limit2
+			} 
+		}
 		x = 25
 		y = 0
 
