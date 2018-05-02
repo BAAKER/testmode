@@ -51,6 +51,7 @@ set_stability = 0.4
 set_war_support = 0.2
 
 add_ideas = {
+	disarmed_nation
 	antanta_occupation
 	sour_loser
 }
