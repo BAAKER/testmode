@@ -8,8 +8,6 @@ country_event = {
 	desc = wr.0.d
 	picture = GFX_wr0
 	
-	is_triggered_only = yes
-	
 	trigger = {
 		tag = GER
 		date > 1925.5.10
