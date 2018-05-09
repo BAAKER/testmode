@@ -1,4 +1,4 @@
-add_namespace = germany
+add_namespace = wr
 
 
 #Гинденбург приехал в Берлин
@@ -6,15 +6,15 @@ country_event = {
 	id = wr.0
 	title = wr.0.t
 	desc = wr.0.d
-	picture = GFX_wr0
+	picture = GFX_report_event_wr0
 	
 	trigger = {
 		tag = GER
-		date > 1925.5.10
+		date > 1925.5.8
 	}
 	
 	mean_time_to_happen = {
-		days = 1
+		days =3
 	}
 	
 	option = {
