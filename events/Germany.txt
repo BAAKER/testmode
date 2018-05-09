@@ -1,0 +1,25 @@
+add_namespace = germany
+
+
+#Гинденбург приехал в Берлин
+country_event = {
+	id = wr.0
+	title = wr.0.t
+	desc = wr.0.d
+	picture = GFX_wr0
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = GER
+		date > 1925.5.10
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = wr.0.a
+	}
+}	
