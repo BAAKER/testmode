@@ -637,4 +637,116 @@ focus_tree = {
 		y = 7
 
 	}
-}
+	
+#ветка монархии
+
+	focus = {
+		id = ger_nnnp_guards
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10
+		prerequisite = {
+			focus = ger_return_lands
+		}
+		x = 14
+		y = 5
+
+	}
+	
+	focus = {
+		id = ger_invite_mackensen
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10
+		prerequisite = {
+			focus = ger_nnnp_guards
+		}
+		x = 14
+		y = 6
+
+	}
+	
+	focus = {
+		id = ger_invite_nnnp_in_gov
+		icon = GFX_goal_generic_improve_relations
+		cost = 10
+		prerequisite = {
+			focus = ger_invite_mackensen
+		}
+		x = 14
+		y = 7
+
+	}
+	
+	focus = {
+		id = ger_mackensen_revolution
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = ger_invite_nnnp_in_gov
+		}
+		x = 14
+		y = 8
+
+	}
+	
+	focus = {
+		id = ger_restoration_empire
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		prerequisite = {
+			focus = ger_mackensen_revolution
+		}
+		x = 14
+		y = 9
+
+	}
+	
+	focus = {
+		id = ger_kaiser_wilhelm
+		icon = GFX_goal_generic_major_alliance
+		cost = 10
+		prerequisite = {
+			focus = ger_restoration_empire
+		}
+		mutually_exclusive = {
+			focus = ger_kaiser_adolf
+			focus = ger_kaiser_ernst
+		}
+		x = 14
+		y = 10
+
+	}
+	
+	focus = {
+		id = ger_kaiser_adolf
+		icon = GFX_goal_generic_major_alliance
+		cost = 10
+		prerequisite = {
+			focus = ger_restoration_empire
+		}
+		mutually_exclusive = {
+			focus = ger_kaiser_wilhelm
+			focus = ger_kaiser_ernst
+		}
+		x = 12
+		y = 10
+
+	}
+	
+	focus = {
+		id = ger_kaiser_ernst
+		icon = GFX_goal_generic_major_alliance
+		cost = 10
+		prerequisite = {
+			focus = ger_restoration_empire
+		}
+		mutually_exclusive = {
+			focus = ger_kaiser_wilhelm
+			focus = ger_kaiser_adolf
+		}
+		x = 16
+		y = 10
+
+	}
+	
+	
+}	
