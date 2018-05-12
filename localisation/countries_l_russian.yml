@@ -1357,6 +1357,8 @@
  MAN_communism_ADJ:0 "Маньчжурск."
  SAA_democratic:0 "Территория Саарского бассейна"
  SAA_democratic_DEF:0 "Территория Саарского бассейна"
+ DAZ_neutrality:0 "Вольный город Данциг"
+ DAZ_neutrality_DEF:0 "Вольный город Данциг"
  
  FACTION_NAME_DEMOCRATIC_1:0 "$CONTINENT_ADJ$ ассоциация"
  FACTION_NAME_DEMOCRATIC_2:0 "$CONTINENT_ADJ$ Антанта"

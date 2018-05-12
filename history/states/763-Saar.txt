@@ -15,7 +15,7 @@ state={
 		add_core_of = GER
 	}
 	provinces={
-		563 3423 9575 11531 11547 
+		 9575 11531
 	}
 	
 }
