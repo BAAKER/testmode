@@ -748,5 +748,87 @@ focus_tree = {
 
 	}
 	
+#претензии
+
+	focus = {
+		id = ger_saarland
+		icon = GFX_goal_generic_position_armies
+		cost = 10
+		x = 34
+		y = 0
+
+	}
+
+	focus = {
+		id = ger_alsace_lorraine
+		icon = GFX_goal_generic_position_armies
+		cost = 10
+		prerequisite = {
+			focus = ger_saarland
+		}
+		x = 32
+		y = 1
+
+	}
+	
+	focus = {
+		id = ger_german_afrika
+		icon = GFX_goal_generic_position_armies
+		cost = 10
+		prerequisite = {
+			focus = ger_alsace_lorraine
+		}
+		x = 32
+		y = 2
+
+	}
+	
+	focus = {
+		id = ger_memel
+		icon = GFX_goal_generic_position_armies
+		cost = 10
+		prerequisite = {
+			focus = ger_saarland
+		}
+		x = 36
+		y = 1
+
+	}
+	
+	focus = {
+		id = ger_west_prussia
+		icon = GFX_goal_generic_position_armies
+		cost = 10
+		prerequisite = {
+			focus = ger_memel
+		}
+		x = 36
+		y = 2
+
+	}
+	
+	focus = {
+		id = ger_upper_silesia
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 10
+		prerequisite = {
+			focus = ger_west_prussia
+		}
+		x = 36
+		y = 3
+
+	}
+	
+	focus = {
+		id = ger_schleswig
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 10
+		prerequisite = {
+			focus = ger_upper_silesia
+		}
+		x = 36
+		y = 4
+
+	}
 	
 }	
