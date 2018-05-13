@@ -151,7 +151,7 @@ ideas = {
 				always = yes
 			}
 			
-			picture = idea_hun_secret_rearmament
+			picture = HUN_secret_rearmament
 			
 			removal_cost = -1
 			
@@ -173,7 +173,7 @@ ideas = {
 				always = yes
 			}
 			
-			picture = idea_hun_secret_rearmament
+			picture = HUN_secret_rearmament
 			
 			removal_cost = -1
 			
