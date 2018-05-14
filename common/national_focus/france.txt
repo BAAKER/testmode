@@ -33,6 +33,14 @@ focus_tree = {
 
 	}
 	focus = {
+		id = fra_french_way
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 16
+		y = 0
+
+	}
+	focus = {
 		id = fra_milfactory_normadia
 		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5
@@ -136,7 +144,7 @@ focus_tree = {
 	}
 	focus = {
 		id = fra_line_magino
-		icon = GFX_goal_generic_construct_military
+		icon = GFX_goal_generic_defence
 		cost = 5
 		prerequisite = {
 			focus = fra_industrial_elsas
@@ -185,6 +193,113 @@ focus_tree = {
 
 	}
 	focus = {
+		id = fra_elsas_coal
+		icon = GFX_goal_generic_construction2
+		cost = 5
+		prerequisite = {
+			focus = fra_french_resourses
+		}
+		x = 11
+		y = 1
+
+	}
+	focus = {
+		id = fra_pyrenies_oil
+		icon = GFX_goal_generic_construction2
+		cost = 5
+		prerequisite = {
+			focus = fra_elsas_coal
+		}
+		x = 11
+		y = 2
+
+	}
+	focus = {
+		id = fra_national_unity
+		icon = GFX_goal_support_democracy
+		cost = 5
+		prerequisite = {
+			focus = fra_french_way
+		}
+		mutually_exclusive = {
+			focus = fra_FCP
+		}
+		x = 14
+		y = 1
+
+	}
+	focus = {
+		id = fra_decay_lefy_block
+		icon = GFX_goal_anti_comintern_pact
+		cost = 5
+		prerequisite = {
+			focus = fra_national_unity
+		}
+		x = 14
+		y = 2
+
+	}
+	focus = {
+		id = fra_join_in_faction_democratic
+		icon = GFX_goal_support_democracy
+		cost = 5
+		prerequisite = {
+			focus = fra_decay_lefy_block
+		}
+		x = 14
+		y = 4
+
+	}
+	focus = {
+		id = fra_FCP
+		icon = GFX_goal_support_communism
+		cost = 5
+		prerequisite = {
+			focus = fra_french_way
+		}
+		mutually_exclusive = {
+			focus = fra_national_unity
+			focus = fra_fascist_resistance
+		}
+		x = 16
+		y = 1
+
+	}
+	focus = {
+		id = fra_heyday_of_left_block
+		icon = GFX_goal_support_fourth_int
+		cost = 5
+		prerequisite = {
+			focus = fra_FCP
+		}
+		x = 16
+		y = 2
+
+	}
+	focus = {
+		id = fra_freedom_for_syria
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		prerequisite = {
+			focus = fra_heyday_of_left_block
+			focus = fra_decay_lefy_block
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = fra_join_in_faction_communism
+		icon = GFX_goal_support_communism
+		cost = 0
+		prerequisite = {
+			focus = fra_heyday_of_left_block
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
 		id = fra_magino_in_switzerland
 		icon = GFX_goal_generic_construct_military
 		cost = 5
@@ -207,7 +322,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = fra_magino_in italy
+		id = fra_magino_in_italy
 		icon = GFX_goal_generic_construct_military
 		cost = 5
 		prerequisite = {
@@ -218,25 +333,51 @@ focus_tree = {
 
 	}
 	focus = {
-		id = fra_elsas_coal
-		icon = GFX_goal_generic_construction2
+		id = fra_fascist_resistance
+		icon = GFX_goal_support_fascism
 		cost = 5
 		prerequisite = {
-			focus = fra_french_resourses
+			focus = fra_french_way
 		}
-		x = 11
+		mutually_exclusive = {
+			focus = fra_FCP
+		}
+		x = 18
 		y = 1
 
 	}
 	focus = {
-		id = fra_pyrenies_oil
-		icon = GFX_goal_generic_construction2
+		id = fra_leader_of_nazi
+		icon = GFX_goal_generic_demand_territory
 		cost = 5
 		prerequisite = {
-			focus = fra_elsas_coal
+			focus = fra_fascist_resistance
 		}
-		x = 11
+		x = 18
 		y = 2
+
+	}
+	focus = {
+		id = fra_influence
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		prerequisite = {
+			focus = fra_heyday_of_left_block
+			focus = fra_leader_of_nazi
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
+		id = fra_join_in_faction_fascism
+		icon = GFX_goal_support_fascism
+		cost = 5
+		prerequisite = {
+			focus = fra_leader_of_nazi
+		}
+		x = 18
+		y = 4
 
 	}
 }
