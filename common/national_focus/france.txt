@@ -1,0 +1,242 @@
+focus_tree = {
+	id = france
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+	default = no
+	focus = {
+		id = fra_industrial_nord
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5
+		x = 3
+		y = 0
+
+	}
+	focus = {
+		id = fra_french_sience
+		icon = GFX_focus_research
+		cost = 5
+		x = 8
+		y = 0
+
+	}
+	focus = {
+		id = fra_french_resourses
+		icon = GFX_goal_generic_construction2
+		cost = 5
+		x = 11
+		y = 0
+
+	}
+	focus = {
+		id = fra_milfactory_normadia
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5
+		prerequisite = {
+			focus = fra_industrial_nord
+		}
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = fra_milfactory_bretange
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5
+		prerequisite = {
+			focus = fra_milfactory_normadia
+		}
+		x = 1
+		y = 2
+
+	}
+	focus = {
+		id = fra_milfactory_elsas
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5
+		prerequisite = {
+			focus = fra_milfactory_bretange
+		}
+		x = 1
+		y = 3
+
+	}
+	focus = {
+		id = fra_industrial_normandia
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5
+		prerequisite = {
+			focus = fra_industrial_nord
+		}
+		x = 3
+		y = 1
+
+	}
+	focus = {
+		id = fra_industrial_bretange
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5
+		prerequisite = {
+			focus = fra_industrial_normandia
+		}
+		x = 3
+		y = 2
+
+	}
+	focus = {
+		id = fra_industrial_elsas
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5
+		prerequisite = {
+			focus = fra_industrial_bretange
+		}
+		x = 3
+		y = 3
+
+	}
+	focus = {
+		id = fra_fabric_normandia
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5
+		prerequisite = {
+			focus = fra_industrial_nord
+		}
+		x = 5
+		y = 1
+
+	}
+	focus = {
+		id = fra_fabric_bretange
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5
+		prerequisite = {
+			focus = fra_fabric_normandia
+		}
+		prerequisite = {
+			focus = fra_fabric_normandia
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = fra_fabric_elsas
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5
+		prerequisite = {
+			focus = fra_fabric_bretange
+		}
+		x = 5
+		y = 3
+
+	}
+	focus = {
+		id = fra_line_magino
+		icon = GFX_goal_generic_construct_military
+		cost = 5
+		prerequisite = {
+			focus = fra_industrial_elsas
+		}
+		prerequisite = {
+			focus = fra_fabric_elsas
+		}
+		prerequisite = {
+			focus = fra_milfactory_elsas
+		}
+		x = 3
+		y = 4
+
+	}
+	focus = {
+		id = fra_french_sience_2
+		icon = GFX_focus_research
+		cost = 5
+		prerequisite = {
+			focus = fra_french_sience
+		}
+		x = 8
+		y = 1
+
+	}
+	focus = {
+		id = fra_french_sience_rakets
+		icon = GFX_focus_rocketry
+		cost = 5
+		prerequisite = {
+			focus = fra_french_sience_2
+		}
+		x = 8
+		y = 2
+
+	}
+	focus = {
+		id = fra_french_sience_atomic
+		icon = GFX_focus_wonderweapons
+		cost = 5
+		prerequisite = {
+			focus = fra_french_sience_rakets
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = fra_magino_in_switzerland
+		icon = GFX_goal_generic_construct_military
+		cost = 5
+		prerequisite = {
+			focus = fra_line_magino
+		}
+		x = 1
+		y = 5
+
+	}
+	focus = {
+		id = fra_magino_in_spain
+		icon = GFX_goal_generic_construct_military
+		cost = 5
+		prerequisite = {
+			focus = fra_line_magino
+		}
+		x = 3
+		y = 5
+
+	}
+	focus = {
+		id = fra_magino_in italy
+		icon = GFX_goal_generic_construct_military
+		cost = 5
+		prerequisite = {
+			focus = fra_line_magino
+		}
+		x = 5
+		y = 5
+
+	}
+	focus = {
+		id = fra_elsas_coal
+		icon = GFX_goal_generic_construction2
+		cost = 5
+		prerequisite = {
+			focus = fra_french_resourses
+		}
+		x = 11
+		y = 1
+
+	}
+	focus = {
+		id = fra_pyrenies_oil
+		icon = GFX_goal_generic_construction2
+		cost = 5
+		prerequisite = {
+			focus = fra_elsas_coal
+		}
+		x = 11
+		y = 2
+
+	}
+}
