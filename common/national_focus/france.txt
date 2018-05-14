@@ -1,0 +1,768 @@
+focus_tree = {
+	id = france
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+	default = no
+	focus = {
+		id = fra_industrial_nord
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5
+		x = 3
+		y = 0
+
+	}
+	focus = {
+		id = fra_french_sience
+		icon = GFX_focus_research
+		cost = 5
+		x = 8
+		y = 0
+
+	}
+	focus = {
+		id = fra_french_resourses
+		icon = GFX_goal_generic_construction2
+		cost = 5
+		x = 11
+		y = 0
+
+	}
+	focus = {
+		id = fra_french_way
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 16
+		y = 0
+
+	}
+	focus = {
+		id = fra_milfactory_normadia
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5
+		prerequisite = {
+			focus = fra_industrial_nord
+		}
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = fra_milfactory_bretange
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5
+		prerequisite = {
+			focus = fra_milfactory_normadia
+		}
+		x = 1
+		y = 2
+
+	}
+	focus = {
+		id = fra_milfactory_elsas
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5
+		prerequisite = {
+			focus = fra_milfactory_bretange
+		}
+		x = 1
+		y = 3
+
+	}
+	focus = {
+		id = fra_industrial_normandia
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5
+		prerequisite = {
+			focus = fra_industrial_nord
+		}
+		x = 3
+		y = 1
+
+	}
+	focus = {
+		id = fra_industrial_bretange
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5
+		prerequisite = {
+			focus = fra_industrial_normandia
+		}
+		x = 3
+		y = 2
+
+	}
+	focus = {
+		id = fra_industrial_elsas
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5
+		prerequisite = {
+			focus = fra_industrial_bretange
+		}
+		x = 3
+		y = 3
+
+	}
+	focus = {
+		id = fra_fabric_normandia
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5
+		prerequisite = {
+			focus = fra_industrial_nord
+		}
+		x = 5
+		y = 1
+
+	}
+	focus = {
+		id = fra_fabric_bretange
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5
+		prerequisite = {
+			focus = fra_fabric_normandia
+		}
+		prerequisite = {
+			focus = fra_fabric_normandia
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = fra_fabric_elsas
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5
+		prerequisite = {
+			focus = fra_fabric_bretange
+		}
+		x = 5
+		y = 3
+
+	}
+	focus = {
+		id = fra_line_magino
+		icon = GFX_goal_generic_defence
+		cost = 5
+		prerequisite = {
+			focus = fra_industrial_elsas
+		}
+		prerequisite = {
+			focus = fra_fabric_elsas
+		}
+		prerequisite = {
+			focus = fra_milfactory_elsas
+		}
+		x = 3
+		y = 4
+
+	}
+	focus = {
+		id = fra_magino_in_switzerland
+		icon = GFX_goal_generic_construct_military
+		cost = 5
+		prerequisite = {
+			focus = fra_line_magino
+		}
+		x = 1
+		y = 5
+
+	}
+	focus = {
+		id = fra_magino_in_italy
+		icon = GFX_goal_generic_construct_military
+		cost = 5
+		prerequisite = {
+			focus = fra_line_magino
+		}
+		x = 5
+		y = 5
+
+	}
+	focus = {
+		id = fra_french_sience_2
+		icon = GFX_focus_research
+		cost = 5
+		prerequisite = {
+			focus = fra_french_sience
+		}
+		x = 8
+		y = 1
+
+	}
+	focus = {
+		id = fra_french_sience_rakets
+		icon = GFX_focus_rocketry
+		cost = 5
+		prerequisite = {
+			focus = fra_french_sience_2
+		}
+		x = 8
+		y = 2
+
+	}
+	focus = {
+		id = fra_french_sience_atomic
+		icon = GFX_focus_wonderweapons
+		cost = 5
+		prerequisite = {
+			focus = fra_french_sience_rakets
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = fra_elsas_coal
+		icon = GFX_goal_generic_construction2
+		cost = 5
+		prerequisite = {
+			focus = fra_french_resourses
+		}
+		x = 11
+		y = 1
+
+	}
+	focus = {
+		id = fra_pyrenies_oil
+		icon = GFX_goal_generic_construction2
+		cost = 5
+		prerequisite = {
+			focus = fra_elsas_coal
+		}
+		x = 11
+		y = 2
+
+	}
+	focus = {
+		id = fra_national_unity
+		icon = GFX_goal_support_democracy
+		cost = 5
+		prerequisite = {
+			focus = fra_french_way
+		}
+		mutually_exclusive = {
+			focus = fra_FCP
+		}
+		x = 14
+		y = 1
+
+	}
+	focus = {
+		id = fra_decay_lefy_block
+		icon = GFX_goal_anti_comintern_pact
+		cost = 5
+		prerequisite = {
+			focus = fra_national_unity
+		}
+		x = 14
+		y = 2
+
+	}
+	focus = {
+		id = fra_world_peace
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		prerequisite = {
+			focus = fra_decay_lefy_block
+		}
+		x = 10
+		y = 5
+
+	}
+	focus = {
+		id = fra_quarantees
+		icon = GFX_goal_demand_sudetenland
+		cost = 5
+		prerequisite = {
+			focus = fra_world_peace
+		}
+		x = 6
+		y = 6
+
+	}
+	focus = {
+		id = fra_quarante_poland
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 5
+		prerequisite = {
+			focus = fra_quarantees
+		}
+		x = 4
+		y = 7
+
+	}
+	focus = {
+		id = fra_quarante_kingdom_south_slavs
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 5
+		prerequisite = {
+			focus = fra_quarantees
+		}
+		x = 8
+		y = 7
+
+	}
+	focus = {
+		id = fra_invite_in_liga_of_nations
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 5
+		prerequisite = {
+			focus = fra_world_peace
+		}
+		x = 9
+		y = 6
+
+	}
+	focus = {
+		id = fra_free_country
+		icon = GFX_goal_anschluss
+		cost = 5
+		prerequisite = {
+			focus = fra_decay_lefy_block
+		}
+		x = 12
+		y = 5
+
+	}
+	focus = {
+		id = fra_join_in_faction_democratic
+		icon = GFX_goal_support_democracy
+		cost = 5
+		prerequisite = {
+			focus = fra_decay_lefy_block
+		}
+		x = 13
+		y = 4
+
+	}
+	focus = {
+		id = fra_FCP
+		icon = GFX_goal_support_communism
+		cost = 5
+		prerequisite = {
+			focus = fra_french_way
+		}
+		mutually_exclusive = {
+			focus = fra_national_unity
+			focus = fra_fascist_resistance
+		}
+		x = 16
+		y = 1
+
+	}
+	focus = {
+		id = fra_heyday_of_left_block
+		icon = GFX_goal_support_fourth_int
+		cost = 5
+		prerequisite = {
+			focus = fra_FCP
+		}
+		x = 16
+		y = 2
+
+	}
+	focus = {
+		id = fra_freedom_for_syria
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		prerequisite = {
+			focus = fra_heyday_of_left_block
+			focus = fra_decay_lefy_block
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = fra_join_in_faction_communism
+		icon = GFX_goal_support_communism
+		cost = 5
+		prerequisite = {
+			focus = fra_heyday_of_left_block
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = fra_fascist_resistance
+		icon = GFX_goal_support_fascism
+		cost = 5
+		prerequisite = {
+			focus = fra_french_way
+		}
+		mutually_exclusive = {
+			focus = fra_FCP
+		}
+		x = 18
+		y = 1
+
+	}
+	focus = {
+		id = fra_leader_of_nazi
+		icon = GFX_goal_generic_demand_territory
+		cost = 5
+		prerequisite = {
+			focus = fra_fascist_resistance
+		}
+		x = 18
+		y = 2
+
+	}
+	focus = {
+		id = fra_influence
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		prerequisite = {
+			focus = fra_heyday_of_left_block
+			focus = fra_leader_of_nazi
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
+		id = fra_join_in_faction_fascism
+		icon = GFX_goal_support_fascism
+		cost = 5
+		prerequisite = {
+			focus = fra_leader_of_nazi
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = {
+		id = fra_international_investors
+		icon = GFX_goal_generic_consumer_goods
+		cost = 5
+		prerequisite = {
+			focus = fra_leader_of_nazi
+		}
+		x = 20
+		y = 5
+
+	}
+	focus = {
+		id = fra_italian_fascism
+		icon = GFX_goal_generic_national_unity
+		cost = 0
+		prerequisite = {
+			focus = fra_international_investors
+		}
+		x = 20
+		y = 6
+
+	}
+	focus = {
+		id = fra_pailway_to_italy
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 0
+		prerequisite = {
+			focus = fra_italian_fascism
+		}
+		x = 20
+		y = 7
+
+	}
+	focus = {
+		id = fra_spain_fascism
+		icon = GFX_goal_generic_national_unity
+		cost = 5
+		prerequisite = {
+			focus = fra_pailway_to_italy
+		}
+		x = 20
+		y = 8
+
+	}
+	focus = {
+		id = fra_magino_in_spain
+		icon = GFX_goal_generic_construct_military
+		cost = 5
+		prerequisite = {
+			focus = fra_line_magino
+		}
+		x = 3
+		y = 5
+
+	}
+	focus = {
+		id = fra_quarante_spain
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 5
+		prerequisite = {
+			focus = fra_quarantees
+		}
+		x = 6
+		y = 7
+
+	}
+	focus = {
+		id = fra_quarante_belgum
+		icon = GFX_goal_generic_army_doctrines
+		cost = 5
+		prerequisite = {
+			focus = fra_quarante_poland
+			focus = fra_quarante_spain
+			focus = fra_quarante_kingdom_south_slavs
+		}
+		x = 4
+		y = 8
+
+	}
+	focus = {
+		id = fra_quarante_holland
+		icon = GFX_goal_generic_army_doctrines
+		cost = 5
+		prerequisite = {
+			focus = fra_quarante_poland
+			focus = fra_quarante_spain
+			focus = fra_quarante_kingdom_south_slavs
+		}
+		x = 6
+		y = 8
+
+	}
+	focus = {
+		id = fra_quarante_luxemburg
+		icon = GFX_goal_generic_army_doctrines
+		cost = 5
+		prerequisite = {
+			focus = fra_quarante_poland
+			focus = fra_quarante_spain
+			focus = fra_quarante_kingdom_south_slavs
+		}
+		x = 8
+		y = 8
+
+	}
+	focus = {
+		id = fra_quarante_saar
+		icon = GFX_goal_generic_air_doctrine
+		cost = 5
+		prerequisite = {
+			focus = fra_quarante_belgum
+			focus = fra_quarante_holland
+		}
+		x = 5
+		y = 9
+
+	}
+	focus = {
+		id = fra_quarante_danzig
+		icon = GFX_goal_generic_air_doctrine
+		cost = 5
+		prerequisite = {
+			focus = fra_quarante_holland
+			focus = fra_quarante_luxemburg
+		}
+		x = 7
+		y = 9
+
+	}
+	focus = {
+		id = fra_new_social_programm
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 5
+		prerequisite = {
+			focus = fra_free_country
+		}
+		x = 12
+		y = 6
+
+	}
+	focus = {
+		id = fra_new_econpmic_programm
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 5
+		prerequisite = {
+			focus = fra_new_political_programm
+		}
+		x = 12
+		y = 8
+
+	}
+	focus = {
+		id = fra_new_political_programm
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 5
+		prerequisite = {
+			focus = fra_new_social_programm
+		}
+		x = 12
+		y = 7
+
+	}
+	focus = {
+		id = fra_eternal_communism
+		icon = GFX_goal_support_fourth_int
+		cost = 5
+		prerequisite = {
+			focus = fra_join_in_faction_communism
+		}
+		x = 15
+		y = 5
+
+	}
+	focus = {
+		id = fra_new_social_programm
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 5
+		prerequisite = {
+			focus = fra_eternal_communism
+		}
+		x = 15
+		y = 6
+
+	}
+	focus = {
+		id = fra_new_polical_programm
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 5
+		prerequisite = {
+			focus = fra_new_social_programm
+		}
+		x = 15
+		y = 7
+
+	}
+	focus = {
+		id = fra_new_economic_programm
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 5
+		prerequisite = {
+			focus = fra_new_polical_programm
+		}
+		x = 15
+		y = 8
+
+	}
+	focus = {
+		id = fra_new_communisti_countries
+		icon = GFX_goal_generic_soviet_construction
+		cost = 5
+		prerequisite = {
+			focus = fra_join_in_faction_communism
+		}
+		x = 17
+		y = 5
+
+	}
+	focus = {
+		id = fra_communist_china
+		icon = GFX_goal_generic_air_doctrine
+		cost = 5
+		prerequisite = {
+			focus = fra_new_communisti_countries
+		}
+		x = 17
+		y = 6
+
+	}
+	focus = {
+		id = fra_comunist_japan
+		icon = GFX_goal_generic_air_doctrine
+		cost = 5
+		prerequisite = {
+			focus = fra_communist_china
+		}
+		x = 17
+		y = 7
+
+	}
+	focus = {
+		id = fra_communist_saudi_aravia
+		icon = GFX_goal_generic_air_doctrine
+		cost = 0
+		prerequisite = {
+			focus = fra_comunist_japan
+		}
+		x = 17
+		y = 8
+
+	}
+	focus = {
+		id = fra__communism_forever
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 0
+		prerequisite = {
+			focus = fra_new_economic_programm
+		}
+		prerequisite = {
+			focus = fra_communist_saudi_aravia
+		}
+		x = 16
+		y = 9
+
+	}
+	focus = {
+		id = fra_benilux
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		prerequisite = {
+			focus = fra_leader_of_nazi
+		}
+		x = 22
+		y = 5
+
+	}
+	focus = {
+		id = fra_catalonia
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		prerequisite = {
+			focus = fra_benilux
+		}
+		x = 22
+		y = 6
+
+	}
+	focus = {
+		id = fra_sardinia-piermont
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		prerequisite = {
+			focus = fra_catalonia
+		}
+		x = 22
+		y = 7
+
+	}
+	focus = {
+		id = fra_saar_reinland
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		prerequisite = {
+			focus = fra_sardinia-piermont
+		}
+		x = 22
+		y = 8
+
+	}
+	focus = {
+		id = fra_marroco_sahara
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		prerequisite = {
+			focus = fra_saar_reinland
+		}
+		x = 22
+		y = 9
+
+	}
+	focus = {
+		id = fra_french_axis
+		icon = GFX_goal_support_fascism
+		cost = 5
+		prerequisite = {
+			focus = fra_spain_fascism
+		}
+		x = 20
+		y = 9
+
+	}
+}
