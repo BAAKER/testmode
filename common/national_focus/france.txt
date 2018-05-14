@@ -262,22 +262,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = fra_join_in_faction_democratic
-		icon = GFX_goal_support_democracy
-		cost = 5
-		prerequisite = {
-			focus = fra_decay_lefy_block
-		}
-		x = 11
-		y = 4
-
-	}
-	focus = {
 		id = fra_world_peace
 		icon = GFX_goal_generic_alliance
 		cost = 5
 		prerequisite = {
-			focus = fra_join_in_faction_democratic
+			focus = fra_decay_lefy_block
 		}
 		x = 10
 		y = 5
@@ -332,10 +321,21 @@ focus_tree = {
 		icon = GFX_goal_anschluss
 		cost = 5
 		prerequisite = {
-			focus = fra_join_in_faction_democratic
+			focus = fra_decay_lefy_block
 		}
 		x = 12
 		y = 5
+
+	}
+	focus = {
+		id = fra_join_in_faction_democratic
+		icon = GFX_goal_support_democracy
+		cost = 5
+		prerequisite = {
+			focus = fra_decay_lefy_block
+		}
+		x = 13
+		y = 4
 
 	}
 	focus = {
@@ -425,6 +425,61 @@ focus_tree = {
 
 	}
 	focus = {
+		id = fra_join_in_faction_fascism
+		icon = GFX_goal_support_fascism
+		cost = 5
+		prerequisite = {
+			focus = fra_leader_of_nazi
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = {
+		id = fra_international_investors
+		icon = GFX_goal_generic_consumer_goods
+		cost = 5
+		prerequisite = {
+			focus = fra_leader_of_nazi
+		}
+		x = 20
+		y = 5
+
+	}
+	focus = {
+		id = fra_italian_fascism
+		icon = GFX_goal_generic_national_unity
+		cost = 0
+		prerequisite = {
+			focus = fra_international_investors
+		}
+		x = 20
+		y = 6
+
+	}
+	focus = {
+		id = fra_pailway_to_italy
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 0
+		prerequisite = {
+			focus = fra_italian_fascism
+		}
+		x = 20
+		y = 7
+
+	}
+	focus = {
+		id = fra_spain_fascism
+		icon = GFX_goal_generic_national_unity
+		cost = 5
+		prerequisite = {
+			focus = fra_pailway_to_italy
+		}
+		x = 20
+		y = 8
+
+	}
+	focus = {
 		id = fra_magino_in_spain
 		icon = GFX_goal_generic_construct_military
 		cost = 5
@@ -433,17 +488,6 @@ focus_tree = {
 		}
 		x = 3
 		y = 5
-
-	}
-	focus = {
-		id = fra_join_in_faction_fascism
-		icon = GFX_goal_support_fascism
-		cost = 5
-		prerequisite = {
-			focus = fra_leader_of_nazi
-		}
-		x = 20
-		y = 4
 
 	}
 	focus = {
@@ -652,6 +696,72 @@ focus_tree = {
 			focus = fra_communist_saudi_aravia
 		}
 		x = 16
+		y = 9
+
+	}
+	focus = {
+		id = fra_benilux
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		prerequisite = {
+			focus = fra_leader_of_nazi
+		}
+		x = 22
+		y = 5
+
+	}
+	focus = {
+		id = fra_catalonia
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		prerequisite = {
+			focus = fra_benilux
+		}
+		x = 22
+		y = 6
+
+	}
+	focus = {
+		id = fra_sardinia-piermont
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		prerequisite = {
+			focus = fra_catalonia
+		}
+		x = 22
+		y = 7
+
+	}
+	focus = {
+		id = fra_saar_reinland
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		prerequisite = {
+			focus = fra_sardinia-piermont
+		}
+		x = 22
+		y = 8
+
+	}
+	focus = {
+		id = fra_marroco_sahara
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		prerequisite = {
+			focus = fra_saar_reinland
+		}
+		x = 22
+		y = 9
+
+	}
+	focus = {
+		id = fra_french_axis
+		icon = GFX_goal_support_fascism
+		cost = 5
+		prerequisite = {
+			focus = fra_spain_fascism
+		}
+		x = 20
 		y = 9
 
 	}
