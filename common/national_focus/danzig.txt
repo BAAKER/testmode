@@ -1,0 +1,314 @@
+focus_tree = {
+	id = Danzig
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = DAZ
+		}
+	}
+	default = no
+	focus = {
+		id = daz_independence
+		icon = GFX_goal_generic_demand_territory
+		cost = 5
+		x = 8
+		y = 0
+
+	}
+	focus = {
+		id = daz_people_industrial
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5
+		prerequisite = {
+			focus = daz_independence
+		}
+		x = 2
+		y = 1
+
+	}
+	focus = {
+		id = daz_airport
+		icon = GFX_goal_generic_air_fighter
+		cost = 5
+		prerequisite = {
+			focus = daz_people_industrial
+		}
+		x = 2
+		y = 2
+
+	}
+	focus = {
+		id = daz_port
+		icon = GFX_goal_generic_navy_battleship
+		cost = 5
+		prerequisite = {
+			focus = daz_airport
+		}
+		x = 2
+		y = 3
+
+	}
+	focus = {
+		id = daz_railway
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 0
+		prerequisite = {
+			focus = daz_port
+		}
+		x = 2
+		y = 4
+
+	}
+	focus = {
+		id = daz_alone
+		icon = GFX_goal_tripartite_pact
+		cost = 5
+		prerequisite = {
+			focus = daz_independence
+		}
+		x = 6
+		y = 1
+
+	}
+	focus = {
+		id = daz_allworld_trade
+		icon = GFX_goal_generic_trade
+		cost = 5
+		prerequisite = {
+			focus = daz_alone
+		}
+		x = 6
+		y = 2
+
+	}
+	focus = {
+		id = daz_sea_trade
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5
+		prerequisite = {
+			focus = daz_allworld_trade
+		}
+		x = 6
+		y = 3
+
+	}
+	focus = {
+		id = daz_Danzig_trade_city
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5
+		prerequisite = {
+			focus = daz_sea_trade
+		}
+		x = 6
+		y = 4
+
+	}
+	focus = {
+		id = daz_industrial_progress
+		icon = GFX_goal_generic_production
+		cost = 5
+		prerequisite = {
+			focus = daz_railway
+		}
+		prerequisite = {
+			focus = daz_Danzig_trade_city
+		}
+		x = 4
+		y = 5
+
+	}
+	focus = {
+		id = daz_constitution
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 5
+		prerequisite = {
+			focus = daz_independence
+		}
+		x = 10
+		y = 1
+
+	}
+	focus = {
+		id = daz_NEP
+		icon = GFX_goal_generic_consumer_goods
+		cost = 5
+		prerequisite = {
+			focus = daz_constitution
+		}
+		x = 10
+		y = 2
+
+	}
+	focus = {
+		id = daz_NSP
+		icon = GFX_goal_generic_soviet_construction
+		cost = 5
+		prerequisite = {
+			focus = daz_NEP
+		}
+		x = 10
+		y = 3
+
+	}
+	focus = {
+		id = daz_NPP
+		icon = GFX_goal_generic_major_alliance
+		cost = 5
+		prerequisite = {
+			focus = daz_NSP
+		}
+		x = 10
+		y = 4
+
+	}
+	focus = {
+		id = daz_ideology
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 5
+		prerequisite = {
+			focus = daz_independence
+		}
+		x = 15
+		y = 1
+
+	}
+	focus = {
+		id = daz_democratic
+		icon = GFX_goal_support_democracy
+		cost = 5
+		prerequisite = {
+			focus = daz_ideology
+		}
+		mutually_exclusive = {
+			focus = daz_communism
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = daz_peace_in_world
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		prerequisite = {
+			focus = daz_democratic
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = daz_quarantees_from_france 
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 5
+		prerequisite = {
+			focus = daz_peace_in_world
+		}
+		x = 11
+		y = 5
+
+	}
+	focus = {
+		id = daz_communism
+		icon = GFX_goal_support_communism
+		cost = 5
+		prerequisite = {
+			focus = daz_ideology
+		}
+		mutually_exclusive = {
+			focus = daz_democratic
+			focus = daz_fascism
+		}
+		x = 15
+		y = 2
+
+	}
+	focus = {
+		id = daz_stalin_communism
+		icon = GFX_goal_generic_political_pressure
+		cost = 5
+		prerequisite = {
+			focus = daz_communism
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = daz_fascism
+		icon = GFX_goal_support_fascism
+		cost = 5
+		prerequisite = {
+			focus = daz_ideology
+		}
+		mutually_exclusive = {
+			focus = daz_communism
+		}
+		x = 17
+		y = 2
+
+	}
+	focus = {
+		id = daz_nationaling_fabrics
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5
+		prerequisite = {
+			focus = daz_fascism
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
+		id = daz_pact_section_Poland
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 5
+		prerequisite = {
+			focus = daz_stalin_communism
+			focus = daz_nationaling_fabrics
+		}
+		x = 16
+		y = 5
+
+	}
+	focus = {
+		id = daz_join_faction
+		icon = GFX_goal_tripartite_pact
+		cost = 5
+		prerequisite = {
+			focus = daz_quarantees_from_france 
+		}
+		x = 11
+		y = 6
+
+	}
+	focus = {
+		id = daz_join_faction_nazi
+		icon = GFX_goal_tripartite_pact
+		cost = 5
+		prerequisite = {
+			focus = daz_nationaling_fabrics
+		}
+		prerequisite = {
+			focus = daz_pact_section_Poland
+		}
+		x = 18
+		y = 6
+
+	}
+	focus = {
+		id = daz_faction_commi
+		icon = GFX_goal_support_communism
+		cost = 5
+		prerequisite = {
+			focus = daz_pact_section_Poland
+		}
+		prerequisite = {
+			focus = daz_stalin_communism
+		}
+		x = 14
+		y = 6
+
+	}
+}
