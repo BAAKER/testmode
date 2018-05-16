@@ -1,0 +1,23 @@
+add_namespace = fr
+
+
+#Всемирная выставка 1925 года
+country_event = {
+	id = fr.0
+	title = fr.0.t
+	desc = fr.0.d
+	picture = GFX_report_event_fr0
+	
+	trigger = {
+		tag = FRA
+		date > 1925.5.8
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = fr.0.a
+	}
+}
