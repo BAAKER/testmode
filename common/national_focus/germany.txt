@@ -307,7 +307,37 @@ focus_tree = {
 		x = 11
 		y = 2
 		completion_reward = { 
+			country_event = { id = wr.1 }
+		
+			add_opinion_modifier = {
+				target = FRA
+				modifier = locarno_accepted
+			}
 			
+			add_opinion_modifier = {
+				target = ENG
+				modifier = locarno_accepted
+			}
+			
+			add_opinion_modifier = {
+				target = POL
+				modifier = locarno_accepted
+			}
+			
+			add_opinion_modifier = {
+				target = BEL
+				modifier = locarno_accepted
+			}
+			
+			add_opinion_modifier = {
+				target = CZE
+				modifier = locarno_accepted
+			}
+			
+			add_opinion_modifier = {
+				target = ITA
+				modifier = locarno_accepted
+			}
 		}
 
 	}
@@ -366,6 +396,39 @@ focus_tree = {
 		}
 		x = 17
 		y = 2
+		completion_reward = { 
+			country_event = { id = wr.2 }
+		
+			add_opinion_modifier = {
+				target = FRA
+				modifier = locarno_denied
+			}
+			
+			add_opinion_modifier = {
+				target = ENG
+				modifier = locarno_denied
+			}
+			
+			add_opinion_modifier = {
+				target = POL
+				modifier = locarno_denied
+			}
+			
+			add_opinion_modifier = {
+				target = BEL
+				modifier = locarno_denied
+			}
+			
+			add_opinion_modifier = {
+				target = CZE
+				modifier = locarno_denied
+			}
+			
+			add_opinion_modifier = {
+				target = ITA
+				modifier = locarno_denied
+			}
+		}
 
 	}
 	

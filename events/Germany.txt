@@ -20,4 +20,48 @@ country_event = {
 	option = {
 		name = wr.0.a
 	}
+}
+
+#Подписаны Локарнские соглашения
+country_event = {
+	id = wr.1
+	title = wr.1.t
+	desc = wr.1.d
+	picture = тутБудетПикча
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = wr.1.a
+		add_stability = 0.05
+	}
+}
+
+#Не подписаны Локарнские соглашения
+country_event = {
+	id = wr.2
+	title = wr.2.t
+	desc = wr.2.d
+	picture = тутБудетПикча
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = wr.2.a
+		add_stability = -0.05
+		democracy_drift = -0.05
+
+	}
 }	
+
+
+
+	
