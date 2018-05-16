@@ -6,7 +6,7 @@ country_event = {
 	id = fr.0
 	title = fr.0.t
 	desc = fr.0.d
-	picture = GFX_report_event_fr0
+	picture = event_fr0.dds
 	
 	trigger = {
 		tag = FRA
