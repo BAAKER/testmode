@@ -439,6 +439,18 @@ create_field_marshal = {
 	id = 7
 }
 
+create_field_marshal = {
+	name = "Kurt von Schleicher"
+	picture = "Kurt_von_Schleicher.dds"
+	traits = { career_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+	id = 8
+}
+
 
 ### Ship Variants ###
 ## 1936 Start ##
