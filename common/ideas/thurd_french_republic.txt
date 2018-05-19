@@ -1,0 +1,27 @@
+ideas = {
+	country = {
+	
+		industrialisation_of_nord = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_license_production
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = +0.20
+				production_speed_arms_factory_factor = +0.20
+				production_speed_infrastructure_factor = +0.2
+				line_change_production_efficiency_factor = +0.30
+			}
+			
+		}
+	}
+}

@@ -14,7 +14,9 @@ focus_tree = {
 		cost = 10
 		x = 6
 		y = 0
-
+		completion_reward = {
+			add_ideas = industrialisation_of_nord
+		}
 	}
 	focus = {
 		id = fra_french_sience
@@ -22,7 +24,9 @@ focus_tree = {
 		cost = 10
 		x = 13
 		y = 0
-
+		completion_reward = {
+			add_research_slot = 1
+		}
 	}
 	focus = {
 		id = fra_french_resourses
@@ -49,7 +53,16 @@ focus_tree = {
 		}
 		x = 3
 		y = 1
-
+		completion_reward = {
+			15 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant build
+				}
+			}
+		}
 	}
 	focus = {
 		id = fra_milfactory_bretange
@@ -60,7 +73,16 @@ focus_tree = {
 		}
 		x = 3
 		y = 2
-
+		completion_reward = {
+			14 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant build
+				}
+			}
+		}
 	}
 	focus = {
 		id = fra_milfactory_elsas
@@ -71,7 +93,16 @@ focus_tree = {
 		}
 		x = 3
 		y = 3
-
+		completion_reward = {
+			28 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant build
+				}
+			}
+		}
 	}
 	focus = {
 		id = fra_industrial_normandia
@@ -82,7 +113,16 @@ focus_tree = {
 		}
 		x = 6
 		y = 1
-
+		completion_reward = {
+			15 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant build
+				}
+			}
+		}
 	}
 	focus = {
 		id = fra_industrial_bretange
@@ -93,7 +133,16 @@ focus_tree = {
 		}
 		x = 6
 		y = 2
-
+		completion_reward = {
+			14 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant build
+				}
+			}
+		}
 	}
 	focus = {
 		id = fra_industrial_elsas
@@ -104,7 +153,16 @@ focus_tree = {
 		}
 		x = 6
 		y = 3
-
+		completion_reward = {
+			28 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant build
+				}
+			}
+		}
 	}
 	focus = {
 		id = fra_fabric_normandia
@@ -115,7 +173,16 @@ focus_tree = {
 		}
 		x = 9
 		y = 1
-
+		completion_reward = {
+			15 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant build
+				}
+			}
+		}
 	}
 	focus = {
 		id = fra_fabric_bretange
@@ -129,7 +196,16 @@ focus_tree = {
 		}
 		x = 9
 		y = 2
-
+		completion_reward = {
+			14 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant build
+				}
+			}
+		}
 	}
 	focus = {
 		id = fra_fabric_elsas
@@ -140,12 +216,21 @@ focus_tree = {
 		}
 		x = 9
 		y = 3
-
+		completion_reward = {
+			28 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant build
+				}
+			}
+		}
 	}
 	focus = {
 		id = fra_line_magino
 		icon = GFX_goal_generic_defence
-		cost = 10
+		cost = 15
 		prerequisite = {
 			focus = fra_industrial_elsas
 		}
@@ -156,8 +241,7 @@ focus_tree = {
 			focus = fra_milfactory_elsas
 		}
 		x = 6
-		y = 4
-
+		y = 4	
 	}
 	focus = {
 		id = fra_magino_in_switzerland
@@ -168,7 +252,7 @@ focus_tree = {
 		}
 		x = 4
 		y = 5
-
+	
 	}
 	focus = {
 		id = fra_magino_in_italy
@@ -190,7 +274,9 @@ focus_tree = {
 		}
 		x = 13
 		y = 2
-
+		completion_reward = {
+			add_research_slot = 1
+		}
 	}
 	focus = {
 		id = fra_french_sience_rakets
@@ -201,7 +287,14 @@ focus_tree = {
 		}
 		x = 13
 		y = 4
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = atomic
+				bonus = 0.5
+				ahead_reduction = 1
+				category = rocketry
+			}
+		}		
 	}
 	focus = {
 		id = fra_french_sience_atomic
@@ -212,7 +305,14 @@ focus_tree = {
 		}
 		x = 13
 		y = 6
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = atomic
+				bonus = 0.5
+				ahead_reduction = 1
+				category = nuclear
+			}
+		}
 	}
 	focus = {
 		id = fra_elsas_coal
