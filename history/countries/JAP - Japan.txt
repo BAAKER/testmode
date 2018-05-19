@@ -2,7 +2,7 @@
 
 oob = "JAP_1936"
 
-set_stability = 0.2 #baseline, THE EMPEROR PROTECTS
+set_stability = 0.4 #baseline, THE EMPEROR PROTECTS
 set_war_support = 0.8
 
 set_research_slots = 4
@@ -253,15 +253,14 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Hirohito"
+	name = "Yoshihito"
 	desc = "POLITICS_Hirohito_DESC"
-	picture = "Hirohito.dds"
+	picture = "Yoshihito.dds"
 	expire = "1989.1.1"
 	ideology = fascism_ideology
 	traits = {
-		warrior_code
-		emperor_showa
-		imperial_sanction
+		seriously_sick
+		meningit
 	}
 	id = 700 #Hirohito
 }
