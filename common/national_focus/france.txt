@@ -38,7 +38,9 @@ focus_tree = {
 		cost = 10
 		x = 25
 		y = 0
-
+		completion_reward = { 
+			add_political_power = 120
+		}		
 	}
 	focus = {
 		id = fra_new_econpmic_programm
@@ -331,7 +333,14 @@ focus_tree = {
 		}
 		x = 13
 		y = 6
-
+		completion_reward = {
+			add_tech_bonus = {
+			name = atomic
+			bonus = 0.5
+			ahead_reduction = 1
+			category = nuclear
+							}
+					}
 	}
 	focus = {
 		id = fra_national_unity
