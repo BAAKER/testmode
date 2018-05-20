@@ -21,42 +21,16 @@ focus_tree = {
 
 	}
 	focus = {
-		id = fra_french_sience
-		icon = GFX_focus_research
-		cost = 10
-		x = 13
-		y = 0
-				completion_reward = {
-						add_research_slot = 1
-					}
-
-
-	}
-	focus = {
 		id = fra_french_way
 		icon = GFX_goal_generic_alliance
 		cost = 10
 		x = 25
 		y = 0
-		completion_reward = { 
-			add_political_power = 120 
-			add_stability = 0.20 
-		}	
-	}
-	focus = {
-		id = fra_new_econpmic_programm
-		icon = GFX_goal_generic_forceful_treaty
-		cost = 10
-		x = 20
-		y = 10
+				completion_reward = {
+						add_political_power = 120
+						add_stability = 0.20
+					}
 
-	}
-	focus = {
-		id = fra_sardinia-piermont
-		icon = GFX_goal_generic_major_war
-		cost = 10
-		x = 36
-		y = 10
 
 	}
 	focus = {
@@ -264,84 +238,30 @@ focus_tree = {
 		prerequisite = {
 			focus = fra_milfactory_elsas
 		}
-		x = 6
+		x = 4
 		y = 4
 
 	}
 	focus = {
-		id = fra_magino_in_switzerland
-		icon = GFX_goal_generic_construct_military
-		cost = 10
-		prerequisite = {
-			focus = fra_line_magino
-		}
-		x = 4
-		y = 5
-
-	}
-	focus = {
-		id = fra_magino_in_italy
-		icon = GFX_goal_generic_construct_military
-		cost = 10
-		prerequisite = {
-			focus = fra_line_magino
-		}
-		x = 8
-		y = 5
-
-	}
-	focus = {
-		id = fra_french_sience_2
+		id = fra_french_sience
 		icon = GFX_focus_research
 		cost = 10
 		prerequisite = {
-			focus = fra_french_sience
+			focus = fra_fabric_elsas
 		}
-		x = 13
-		y = 2
+		prerequisite = {
+			focus = fra_industrial_elsas
+		}
+		prerequisite = {
+			focus = fra_milfactory_elsas
+		}
+		x = 8
+		y = 4
 				completion_reward = {
 						add_research_slot = 1
 					}
 
 
-	}
-	focus = {
-		id = fra_french_sience_rakets
-		icon = GFX_focus_rocketry
-		cost = 10
-		prerequisite = {
-			focus = fra_french_sience_2
-		}
-		x = 13
-		y = 4
-				completion_reward = {
-						add_tech_bonus = {
-								name = atomic
-								bonus = 0.5
-								ahead_reduction = 1
-								category = rocketry
-							}
-					}
-
-
-	}
-	focus = {
-		id = fra_french_sience_atomic
-		icon = GFX_focus_wonderweapons
-		cost = 10
-		prerequisite = {
-			focus = fra_french_sience_rakets
-		}
-		x = 13
-		y = 6
-		completion_reward = {
-			add_tech_bonus = {
-			name = atomic
-			bonus = 0.5
-			ahead_reduction = 1
-			category = nuclear
-							}
-					}
 	}
 	focus = {
 		id = fra_national_unity
@@ -351,14 +271,16 @@ focus_tree = {
 			focus = fra_french_way
 		}
 		mutually_exclusive = {
-			focus = fra_monarchist_resistance
 			focus = fra_FCP
+			focus = fra_monarchist_resistance
 		}
 		x = 22
 		y = 1
-		completion_reward = {
-			add_ideas = democracy1
-		}
+				completion_reward = {
+						add_ideas = democracy1
+					}
+
+
 	}
 	focus = {
 		id = fra_decay_lefy_block
@@ -394,36 +316,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = fra_invite_in_liga_of_nations
-		icon = GFX_goal_generic_intelligence_exchange
-		cost = 10
-		prerequisite = {
-			focus = fra_world_peace
-		}
-		x = 15
-		y = 6
-
-	}
-	focus = {
 		id = fra_free_country
 		icon = GFX_goal_anschluss
 		cost = 10
 		prerequisite = {
 			focus = fra_join_in_faction_democratic
 		}
-		x = 18
-		y = 5
-
-	}
-	focus = {
-		id = fra_new_social_programm
-		icon = GFX_goal_generic_forceful_treaty
-		cost = 10
-		prerequisite = {
-			focus = fra_free_country
-		}
 		x = 20
-		y = 6
+		y = 5
 
 	}
 	focus = {
@@ -434,14 +334,16 @@ focus_tree = {
 			focus = fra_french_way
 		}
 		mutually_exclusive = {
-			focus = fra_monarchist_resistance
 			focus = fra_national_unity
+			focus = fra_monarchist_resistance
 		}
 		x = 25
 		y = 2
-		completion_reward = {
-			add_ideas = communism1
-		}
+				completion_reward = {
+						add_ideas = communism1
+					}
+
+
 	}
 	focus = {
 		id = fra_heyday_of_french_communism
@@ -450,11 +352,12 @@ focus_tree = {
 		prerequisite = {
 			focus = fra_FCP
 		}
-		available = {
-			has_government = fascism
-		}
 		x = 25
 		y = 3
+available = {
+	has_government = fascism
+}
+
 
 	}
 	focus = {
@@ -466,7 +369,7 @@ focus_tree = {
 			focus = fra_decay_lefy_block
 		}
 		mutually_exclusive = {
-			focus = fra_influence
+			focus = fra_eninvite_liga_natinos
 		}
 		x = 24
 		y = 4
@@ -496,9 +399,11 @@ focus_tree = {
 		}
 		x = 28
 		y = 1
-		completion_reward = {
-			add_ideas = fascism1
-		}
+				completion_reward = {
+						add_ideas = fascism1
+					}
+
+
 	}
 	focus = {
 		id = fra_empire
@@ -512,8 +417,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = fra_influence
-		icon = GFX_goal_generic_improve_relations
+		id = fra_eninvite_liga_natinos
+		icon = GFX_goal_generic_intelligence_exchange
 		cost = 10
 		prerequisite = {
 			focus = fra_heyday_of_french_communism
@@ -643,14 +548,124 @@ focus_tree = {
 
 	}
 	focus = {
-		id = fra_magino_in_spain
+		id = fra_new_econpmic_programm
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10
+		prerequisite = {
+			focus = fra_new_political_programm
+		}
+		x = 20
+		y = 10
+
+	}
+	focus = {
+		id = fra_sardinia-piermont
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = fra_marroco_sahara
+		}
+		x = 36
+		y = 10
+
+	}
+	focus = {
+		id = fra_magino_in_switzerland
 		icon = GFX_goal_generic_construct_military
 		cost = 10
 		prerequisite = {
 			focus = fra_line_magino
 		}
-		x = 6
+		x = 4
 		y = 5
+
+	}
+	focus = {
+		id = fra_magino_in_italy
+		icon = GFX_goal_generic_construct_military
+		cost = 10
+		prerequisite = {
+			focus = fra_magino_in_switzerland
+		}
+		x = 4
+		y = 6
+
+	}
+	focus = {
+		id = fra_french_sience_2
+		icon = GFX_focus_research
+		cost = 10
+		prerequisite = {
+			focus = fra_french_sience
+		}
+		x = 8
+		y = 5
+				completion_reward = {
+						add_research_slot = 1
+					}
+
+
+	}
+	focus = {
+		id = fra_french_sience_rakets
+		icon = GFX_focus_rocketry
+		cost = 10
+		prerequisite = {
+			focus = fra_french_sience_2
+		}
+		x = 8
+		y = 6
+				completion_reward = {
+						add_tech_bonus = {
+								name = atomic
+								bonus = 0.5
+								ahead_reduction = 1
+								category = rocketry
+							}
+					}
+
+
+	}
+	focus = {
+		id = fra_french_sience_atomic
+		icon = GFX_focus_wonderweapons
+		cost = 10
+		prerequisite = {
+			focus = fra_french_sience_rakets
+		}
+		x = 8
+		y = 7
+				completion_reward = {
+						add_tech_bonus = {
+								name = atomic
+								bonus = 0.5
+								ahead_reduction = 1
+								category = nuclear
+							}
+					}
+
+
+	}
+	focus = {
+		id = fra_new_social_programm
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10
+		prerequisite = {
+			focus = fra_free_country
+		}
+		x = 20
+		y = 6
+
+	}
+	focus = {
+		id = fra_magino_in_spain
+		icon = GFX_goal_generic_construct_military
+		cost = 10
+		prerequisite = {
+			focus = fra_magino_in_italy
+		}
+		x = 4
+		y = 7
 
 	}
 	focus = {
@@ -661,7 +676,7 @@ focus_tree = {
 			focus = fra_world_peace
 		}
 		x = 16
-		y = 9
+		y = 8
 
 	}
 	focus = {
@@ -776,10 +791,10 @@ focus_tree = {
 		icon = GFX_goal_generic_war_with_comintern
 		cost = 10
 		prerequisite = {
-			focus = fra_communist_saudi_aravia
+			focus = fra_ec0
 		}
 		prerequisite = {
-			focus = fra_ec0
+			focus = fra_communist_saudi_aravia
 		}
 		x = 25
 		y = 13
@@ -816,17 +831,6 @@ focus_tree = {
 		}
 		x = 36
 		y = 8
-
-	}
-	focus = {
-		id = fra_eninvite_liga_natinos
-		icon = GFX_goal_generic_intelligence_exchange
-		cost = 10
-		prerequisite = {
-			focus = fra_invite_in_liga_of_nations
-		}
-		x = 15
-		y = 7
 
 	}
 	focus = {
