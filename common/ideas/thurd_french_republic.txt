@@ -70,7 +70,26 @@ ideas = {
 			picture = communism_group
 			
 			modifier = {
-				communism_drift = 0.1
+				communism_drift = 1
+			}
+			
+		}		
+		decay_left_block = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = GFX_goal_anti_comintern_pact
+			
+			modifier = {
+				communism_drift = -0.7
+				democratic_drift = 0.4
+				fascism_drift = 0.3
 			}
 			
 		}			

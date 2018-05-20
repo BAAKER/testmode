@@ -12,7 +12,7 @@ focus_tree = {
 		id = fra_industrial_nord
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 10
-		x = 6
+		x = 10
 		y = 0
 				completion_reward = {
 						add_ideas = industrialisation_of_nord
@@ -40,7 +40,7 @@ focus_tree = {
 		prerequisite = {
 			focus = fra_industrial_nord
 		}
-		x = 3
+		x = 7
 		y = 1
 				completion_reward = {
 						15 = {
@@ -61,7 +61,7 @@ focus_tree = {
 		prerequisite = {
 			focus = fra_milfactory_normadia
 		}
-		x = 3
+		x = 7
 		y = 2
 				completion_reward = {
 						14 = {
@@ -82,7 +82,7 @@ focus_tree = {
 		prerequisite = {
 			focus = fra_milfactory_bretange
 		}
-		x = 3
+		x = 7
 		y = 3
 				completion_reward = {
 						28 = {
@@ -103,7 +103,7 @@ focus_tree = {
 		prerequisite = {
 			focus = fra_industrial_nord
 		}
-		x = 6
+		x = 10
 		y = 1
 				completion_reward = {
 						15 = {
@@ -124,7 +124,7 @@ focus_tree = {
 		prerequisite = {
 			focus = fra_industrial_normandia
 		}
-		x = 6
+		x = 10
 		y = 2
 				completion_reward = {
 						14 = {
@@ -145,7 +145,7 @@ focus_tree = {
 		prerequisite = {
 			focus = fra_industrial_bretange
 		}
-		x = 6
+		x = 10
 		y = 3
 				completion_reward = {
 						28 = {
@@ -166,7 +166,7 @@ focus_tree = {
 		prerequisite = {
 			focus = fra_industrial_nord
 		}
-		x = 9
+		x = 13
 		y = 1
 				completion_reward = {
 						15 = {
@@ -190,7 +190,7 @@ focus_tree = {
 		prerequisite = {
 			focus = fra_fabric_normandia
 		}
-		x = 9
+		x = 13
 		y = 2
 				completion_reward = {
 						14 = {
@@ -211,7 +211,7 @@ focus_tree = {
 		prerequisite = {
 			focus = fra_fabric_bretange
 		}
-		x = 9
+		x = 13
 		y = 3
 				completion_reward = {
 						28 = {
@@ -238,7 +238,7 @@ focus_tree = {
 		prerequisite = {
 			focus = fra_milfactory_elsas
 		}
-		x = 4
+		x = 8
 		y = 4
 
 	}
@@ -255,7 +255,7 @@ focus_tree = {
 		prerequisite = {
 			focus = fra_milfactory_elsas
 		}
-		x = 8
+		x = 12
 		y = 4
 				completion_reward = {
 						add_research_slot = 1
@@ -291,6 +291,10 @@ focus_tree = {
 		}
 		x = 23
 		y = 3
+				completion_reward = {
+						add_ideas = decay_left_block
+					}
+
 
 	}
 	focus = {
@@ -305,8 +309,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = fra_world_peace
-		icon = GFX_goal_generic_alliance
+		id = fra_quarantees
+		icon = GFX_goal_demand_sudetenland
 		cost = 10
 		prerequisite = {
 			focus = fra_join_in_faction_democratic
@@ -316,8 +320,30 @@ focus_tree = {
 
 	}
 	focus = {
-		id = fra_free_country
-		icon = GFX_goal_anschluss
+		id = fra_quarante_poland
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10
+		prerequisite = {
+			focus = fra_quarantees
+		}
+		x = 14
+		y = 11
+
+	}
+	focus = {
+		id = fra_quarante_kingdom_south_slavs
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10
+		prerequisite = {
+			focus = fra_quarantees
+		}
+		x = 18
+		y = 11
+
+	}
+	focus = {
+		id = fra_new_social_programm
+		icon = GFX_goal_generic_forceful_treaty
 		cost = 10
 		prerequisite = {
 			focus = fra_join_in_faction_democratic
@@ -354,9 +380,9 @@ focus_tree = {
 		}
 		x = 25
 		y = 3
-available = {
-	has_government = fascism
-}
+				available = {
+						has_government = fascism
+					}
 
 
 	}
@@ -555,7 +581,7 @@ available = {
 			focus = fra_new_political_programm
 		}
 		x = 20
-		y = 10
+		y = 9
 
 	}
 	focus = {
@@ -576,7 +602,7 @@ available = {
 		prerequisite = {
 			focus = fra_line_magino
 		}
-		x = 4
+		x = 8
 		y = 5
 
 	}
@@ -587,7 +613,7 @@ available = {
 		prerequisite = {
 			focus = fra_magino_in_switzerland
 		}
-		x = 4
+		x = 8
 		y = 6
 
 	}
@@ -598,7 +624,7 @@ available = {
 		prerequisite = {
 			focus = fra_french_sience
 		}
-		x = 8
+		x = 12
 		y = 5
 				completion_reward = {
 						add_research_slot = 1
@@ -613,7 +639,7 @@ available = {
 		prerequisite = {
 			focus = fra_french_sience_2
 		}
-		x = 8
+		x = 12
 		y = 6
 				completion_reward = {
 						add_tech_bonus = {
@@ -633,7 +659,7 @@ available = {
 		prerequisite = {
 			focus = fra_french_sience_rakets
 		}
-		x = 8
+		x = 12
 		y = 7
 				completion_reward = {
 						add_tech_bonus = {
@@ -647,47 +673,14 @@ available = {
 
 	}
 	focus = {
-		id = fra_new_social_programm
-		icon = GFX_goal_generic_forceful_treaty
-		cost = 10
-		prerequisite = {
-			focus = fra_free_country
-		}
-		x = 20
-		y = 6
-
-	}
-	focus = {
 		id = fra_magino_in_spain
 		icon = GFX_goal_generic_construct_military
 		cost = 10
 		prerequisite = {
 			focus = fra_magino_in_italy
 		}
-		x = 4
+		x = 8
 		y = 7
-
-	}
-	focus = {
-		id = fra_quarantees
-		icon = GFX_goal_demand_sudetenland
-		cost = 10
-		prerequisite = {
-			focus = fra_world_peace
-		}
-		x = 16
-		y = 8
-
-	}
-	focus = {
-		id = fra_quarante_poland
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		cost = 10
-		prerequisite = {
-			focus = fra_quarantees
-		}
-		x = 13
-		y = 11
 
 	}
 	focus = {
@@ -702,17 +695,6 @@ available = {
 
 	}
 	focus = {
-		id = fra_quarante_kingdom_south_slavs
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		cost = 10
-		prerequisite = {
-			focus = fra_quarantees
-		}
-		x = 19
-		y = 11
-
-	}
-	focus = {
 		id = fra_quarante_belgum
 		icon = GFX_goal_generic_army_doctrines
 		cost = 10
@@ -721,7 +703,7 @@ available = {
 			focus = fra_quarante_spain
 			focus = fra_quarante_kingdom_south_slavs
 		}
-		x = 11
+		x = 13
 		y = 13
 
 	}
@@ -734,7 +716,7 @@ available = {
 			focus = fra_quarante_spain
 			focus = fra_quarante_kingdom_south_slavs
 		}
-		x = 14
+		x = 15
 		y = 13
 
 	}
@@ -747,7 +729,7 @@ available = {
 			focus = fra_quarante_kingdom_south_slavs
 			focus = fra_quarante_poland
 		}
-		x = 18
+		x = 17
 		y = 13
 
 	}
@@ -760,7 +742,7 @@ available = {
 			focus = fra_quarante_spain
 			focus = fra_quarante_poland
 		}
-		x = 21
+		x = 19
 		y = 13
 
 	}
@@ -772,7 +754,7 @@ available = {
 			focus = fra_new_social_programm
 		}
 		x = 20
-		y = 8
+		y = 7
 
 	}
 	focus = {
@@ -791,10 +773,10 @@ available = {
 		icon = GFX_goal_generic_war_with_comintern
 		cost = 10
 		prerequisite = {
-			focus = fra_ec0
+			focus = fra_communist_saudi_aravia
 		}
 		prerequisite = {
-			focus = fra_communist_saudi_aravia
+			focus = fra_ec0
 		}
 		x = 25
 		y = 13
