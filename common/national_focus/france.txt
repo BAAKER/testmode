@@ -39,8 +39,9 @@ focus_tree = {
 		x = 25
 		y = 0
 		completion_reward = { 
-			add_political_power = 120
-		}		
+			add_political_power = 120 
+			add_stability = 0.20 
+		}	
 	}
 	focus = {
 		id = fra_new_econpmic_programm
@@ -355,7 +356,9 @@ focus_tree = {
 		}
 		x = 22
 		y = 1
-
+		completion_reward = {
+			add_ideas = democracy1
+		}
 	}
 	focus = {
 		id = fra_decay_lefy_block
@@ -436,7 +439,9 @@ focus_tree = {
 		}
 		x = 25
 		y = 2
-
+		completion_reward = {
+			add_ideas = communism1
+		}
 	}
 	focus = {
 		id = fra_heyday_of_french_communism
@@ -444,6 +449,9 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = fra_FCP
+		}
+		available = {
+			has_government = fascism
 		}
 		x = 25
 		y = 3
@@ -488,7 +496,9 @@ focus_tree = {
 		}
 		x = 28
 		y = 1
-
+		completion_reward = {
+			add_ideas = fascism1
+		}
 	}
 	focus = {
 		id = fra_empire

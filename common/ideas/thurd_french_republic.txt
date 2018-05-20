@@ -11,7 +11,7 @@ ideas = {
 				always = yes
 			}
 			
-			picture = generic_license_production
+			picture = idea_generic_industrial_cocern
 
 			removal_cost = -1
 			
@@ -23,5 +23,56 @@ ideas = {
 			}
 			
 		}
+		democracy1 = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = democratic_group
+			
+			modifier = {
+				democratic_drift = 0.1
+			}
+			
+		}
+		fascism1 = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = fascism_group
+			
+			modifier = {
+				fascism_drift = 0.1
+			}
+			
+		}	
+		communism1 = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = communism_group
+			
+			modifier = {
+				communism_drift = 0.1
+			}
+			
+		}			
 	}
 }
