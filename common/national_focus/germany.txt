@@ -780,6 +780,30 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = ger_former_greatness
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = {
+			focus = ger_kaiser_wilhelm
+		}
+		x = 14
+		y = 11
+
+	}
+	
+	focus = {
+		id = ger_empire_army
+		icon = GFX_goal_generic_military_sphere
+		cost = 10
+		prerequisite = {
+			focus = ger_former_greatness
+		}
+		x = 14
+		y = 12
+
+	}
+	
+	focus = {
 		id = ger_kaiser_adolf
 		icon = GFX_goal_generic_major_alliance
 		cost = 10
@@ -792,6 +816,30 @@ focus_tree = {
 		}
 		x = 12
 		y = 10
+
+	}
+	
+	focus = {
+		id = ger_nazi_monarchy
+		icon = GFX_goal_support_fascism
+		cost = 10
+		prerequisite = {
+			focus = ger_kaiser_adolf
+		}
+		x = 9
+		y = 11
+
+	}
+	
+	focus = {
+		id = ger_ss_in_army
+		icon = GFX_goal_rhineland
+		cost = 10
+		prerequisite = {
+			focus = ger_nazi_monarchy
+		}
+		x = 9
+		y = 12
 
 	}
 	
@@ -810,6 +858,126 @@ focus_tree = {
 		y = 10
 
 	}
+	
+	focus = {
+		id = ger_communist_monarchy
+		icon = GFX_goal_support_fourth_int
+		cost = 10
+		prerequisite = {
+			focus = ger_kaiser_ernst
+		}
+		x = 19
+		y = 11
+
+	}
+	
+	focus = {
+		id = ger_rotfront_in_army
+		icon = GFX_goal_rhineland
+		cost = 10
+		prerequisite = {
+			focus = ger_communist_monarchy
+		}
+		x = 19
+		y = 12
+
+	}
+	
+	focus = {
+		id = ger_remove_versailles
+		icon = GFX_goal_anschluss
+		cost = 10
+		prerequisite = {
+			focus = ger_empire_army
+			focus = ger_ss_in_army
+			focus = ger_rotfront_in_army
+		}
+		x = 14
+		y = 13
+
+	}
+	
+	focus = {
+		id = ger_anticapitalism
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 10
+		prerequisite = {
+			focus = ger_rotfront_in_army
+		}
+		prerequisite = {
+			focus = ger_remove_versailles
+		}
+		x = 19
+		y = 14
+
+	}
+	
+	focus = {
+		id = ger_colonial_country
+		icon = GFX_goal_generic_position_armies
+		cost = 10
+		prerequisite = {
+			focus = ger_remove_versailles
+		}
+		prerequisite = {
+			focus = ger_empire_army
+		}
+		x = 14
+		y = 14
+
+	}
+	
+	focus = {
+		id = ger_primacy_in_europe
+		icon = GFX_goal_generic_demand_territory
+		cost = 10
+		prerequisite = {
+			focus = ger_ss_in_army
+		}
+		prerequisite = {
+			focus = ger_remove_versailles
+		}
+		x = 9
+		y = 14
+
+	}
+	
+	focus = {
+		id = ger_old_generals
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10
+		prerequisite = {
+			focus = ger_colonial_country
+		}
+		x = 14
+		y = 15
+
+	}
+	
+	focus = {
+		id = ger_nazi_generals
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10
+		prerequisite = {
+			focus = ger_primacy_in_europe
+		}
+		x = 9
+		y = 15
+
+	}
+	
+	focus = {
+		id = ger_communist_generals
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10
+		prerequisite = {
+			focus = ger_anticapitalism
+		}
+		x = 19
+		y = 15
+
+	}
+	
 	
 #претензии
 
