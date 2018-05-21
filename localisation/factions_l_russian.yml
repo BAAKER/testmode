@@ -1,0 +1,7 @@
+l_russian:
+ FACTION_LEADER:0 "Глава альянса: §Y$COUNTRY$§!"
+ FACTION_MEMBER:0 "Участник альянса: §Y$COUNTRY$§!"
+ FACTION_CREATED_UNDER_MASTER_TITLE:0 "Вступление в $FACTION|H"
+ FACTION_CREATED_UNDER_MASTER_MESSAGE:0 "Мы вступили в альянс $FACTION|H$ вместе с нашей метрополией"
+ FACTION_NAME_IDEOLOGY_DEFAULT:0 "Альянс $IDEOLOGY$"
+ fra_alliance_democracy:0 "Союз Демократических сил"
