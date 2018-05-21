@@ -306,6 +306,10 @@ focus_tree = {
 		}
 		x = 21
 		y = 4
+				completion_reward = {
+						create_faction = Французский_Альянс
+					}
+
 
 	}
 	focus = {
@@ -410,6 +414,10 @@ focus_tree = {
 		}
 		x = 25
 		y = 5
+				completion_reward = {
+						create_faction = Французский_Интернационал
+					}
+
 
 	}
 	focus = {
@@ -510,6 +518,10 @@ focus_tree = {
 		}
 		x = 29
 		y = 4
+				completion_reward = {
+						create_faction = Монархические_державы
+					}
+
 
 	}
 	focus = {
@@ -593,6 +605,28 @@ focus_tree = {
 		}
 		x = 36
 		y = 10
+
+	}
+	focus = {
+		id = fra_ec0
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10
+		prerequisite = {
+			focus = fra_pol
+		}
+		x = 23
+		y = 11
+
+	}
+	focus = {
+		id = fra_pol
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10
+		prerequisite = {
+			focus = fraa_soc
+		}
+		x = 23
+		y = 9
 
 	}
 	focus = {
@@ -813,28 +847,6 @@ focus_tree = {
 		}
 		x = 36
 		y = 8
-
-	}
-	focus = {
-		id = fra_ec0
-		icon = GFX_goal_generic_forceful_treaty
-		cost = 10
-		prerequisite = {
-			focus = fra_pol
-		}
-		x = 23
-		y = 11
-
-	}
-	focus = {
-		id = fra_pol
-		icon = GFX_goal_generic_forceful_treaty
-		cost = 10
-		prerequisite = {
-			focus = fraa_soc
-		}
-		x = 23
-		y = 9
 
 	}
 	focus = {
