@@ -92,6 +92,23 @@ ideas = {
 				fascism_drift = 0.3
 			}
 			
-		}			
+		}	
+		communism_from_france = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = goal_generic_support_communism
+			
+			modifier = {
+				communism_drift = 1
+			}
+			
+		}		
 	}
 }

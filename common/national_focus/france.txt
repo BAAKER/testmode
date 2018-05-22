@@ -334,10 +334,17 @@ focus_tree = {
 			POL = { exists = yes }
 			is_puppet = no
 			NOT = { has_war_with = POL }
+			OR = {
+				has_government = neutrality
+				has_government = democratic
+			}
 		}		
 		x = 14
 		y = 11
-
+		completion_reward = {
+			give_guarantee = POL
+			add_to_faction = POL
+		}
 	}
 	focus = {
 		id = fra_quarante_kingdom_south_slavs
@@ -346,12 +353,20 @@ focus_tree = {
 		prerequisite = {
 			focus = fra_quarantees
 		}
-		x = 18
-		y = 11
 		available = {
 			YUG = { exists = yes }
 			is_puppet = no
 			NOT = { has_war_with = YUG }
+			OR = {
+				has_government = neutrality
+				has_government = democratic
+			}
+		}
+		x = 18
+		y = 11
+		completion_reward = {
+			give_guarantee = YUG
+			add_to_faction = YUG
 		}
 	}
 	focus = {
@@ -494,6 +509,11 @@ focus_tree = {
 		}
 		x = 27
 		y = 7
+		completion_reward = {
+			CHI = {
+				add_ideas = communism_from_france
+			}
+		}
 
 	}
 	focus = {
@@ -505,7 +525,11 @@ focus_tree = {
 		}
 		x = 27
 		y = 9
-
+		completion_reward = {
+			JAP = {
+				add_ideas = communism_from_france
+			}
+		}
 	}
 	focus = {
 		id = fra_communist_saudi_aravia
@@ -516,7 +540,11 @@ focus_tree = {
 		}
 		x = 27
 		y = 11
-
+		completion_reward = {
+			SAU = {
+				add_ideas = communism_from_france
+			}
+		}
 	}
 	focus = {
 		id = fra_join_in_faction_fascism
@@ -603,7 +631,9 @@ focus_tree = {
 		}
 		x = 20
 		y = 9
-
+		completion_reward = {
+			add_idea_group_mobilization_laws = extensive_conscription
+		}
 	}
 	focus = {
 		id = fra_sardinia-piermont
@@ -737,9 +767,18 @@ focus_tree = {
 			SPR = { exists = yes }
 			is_puppet = no
 			NOT = { has_war_with = SPR }
+			OR = {
+				has_government = neutrality
+				has_government = democratic
+			}
 		}
 		x = 16
 		y = 11
+		completion_reward = {
+			give_guarantee = SPR
+			add_to_faction = SPR
+		}
+		
 	}
 	focus = {
 		id = fra_quarante_belgum
@@ -754,10 +793,17 @@ focus_tree = {
 			BEL = { exists = yes }
 			is_puppet = no
 			NOT = { has_war_with = BEL }
+			OR = {
+				has_government = neutrality
+				has_government = democratic
+			}
 		}
 		x = 13
 		y = 13
-
+		completion_reward = {
+			give_guarantee = BEL
+			add_to_faction = BEL
+		}
 	}
 	focus = {
 		id = fra_quarante_holland
@@ -772,10 +818,17 @@ focus_tree = {
 			HOL = { exists = yes }
 			is_puppet = no
 			NOT = { has_war_with = HOL }
+			OR = {
+				has_government = neutrality
+				has_government = democratic
+			}
 		}
 		x = 15
 		y = 13
-
+		completion_reward = {
+			give_guarantee = HOL
+			add_to_faction = HOL
+		}
 	}
 	focus = {
 		id = fra_quarante_luxemburg
@@ -790,10 +843,17 @@ focus_tree = {
 			LUX = { exists = yes }
 			is_puppet = no
 			NOT = { has_war_with = LUX }
+			OR = {
+				has_government = neutrality
+				has_government = democratic
+			}
 		}
 		x = 17
 		y = 13
-
+		completion_reward = {
+			give_guarantee = LUX
+			add_to_faction = LUX
+		}
 	}
 	focus = {
 		id = fra_quarante_saar
@@ -808,10 +868,17 @@ focus_tree = {
 			SAA = { exists = yes }
 			is_puppet = no
 			NOT = { has_war_with = SAA }
+			OR = {
+				has_government = neutrality
+				has_government = democratic
+			}
 		}
 		x = 19
 		y = 13
-
+		completion_reward = {
+			give_guarantee = SAA
+			add_to_faction = SAA
+		}
 	}
 	focus = {
 		id = fra_new_political_programm
