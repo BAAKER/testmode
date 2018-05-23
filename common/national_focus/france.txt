@@ -330,21 +330,28 @@ focus_tree = {
 		prerequisite = {
 			focus = fra_quarantees
 		}
-		available = {
-			POL = { exists = yes }
-			is_puppet = no
-			NOT = { has_war_with = POL }
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}		
 		x = 14
 		y = 11
-		completion_reward = {
-			give_guarantee = POL
-			add_to_faction = POL
-		}
+				completion_reward = {
+						give_guarantee = POL
+						add_to_faction = POL
+					}
+
+				available = {
+						POL = {
+								exists = yes
+							}
+						is_puppet = no
+						NOT = {
+								has_war_with = POL
+							}
+						OR = {
+								has_government = neutrality
+								has_government = democratic
+							}
+					}
+
+
 	}
 	focus = {
 		id = fra_quarante_kingdom_south_slavs
@@ -353,31 +360,27 @@ focus_tree = {
 		prerequisite = {
 			focus = fra_quarantees
 		}
-		available = {
-			YUG = { exists = yes }
-			is_puppet = no
-			NOT = { has_war_with = YUG }
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
 		x = 18
 		y = 11
-		completion_reward = {
-			give_guarantee = YUG
-			add_to_faction = YUG
-		}
-	}
-	focus = {
-		id = fra_new_social_programm
-		icon = GFX_goal_generic_forceful_treaty
-		cost = 10
-		prerequisite = {
-			focus = fra_join_in_faction_democratic
-		}
-		x = 20
-		y = 5
+				completion_reward = {
+						give_guarantee = YUG
+						add_to_faction = YUG
+					}
+
+				available = {
+						YUG = {
+								exists = yes
+							}
+						is_puppet = no
+						NOT = {
+								has_war_with = YUG
+							}
+						OR = {
+								has_government = neutrality
+								has_government = democratic
+							}
+					}
+
 
 	}
 	focus = {
@@ -445,6 +448,48 @@ focus_tree = {
 
 	}
 	focus = {
+		id = fra_eternal_communism
+		icon = GFX_goal_support_fourth_int
+		cost = 10
+		prerequisite = {
+			focus = fra_join_in_faction_communism
+		}
+		x = 23
+		y = 6
+
+	}
+	focus = {
+		id = fra_new_communisti_countries
+		icon = GFX_goal_generic_soviet_construction
+		cost = 10
+		prerequisite = {
+			focus = fra_join_in_faction_communism
+		}
+		x = 27
+		y = 6
+
+	}
+	focus = {
+		id = fra_communist_china
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10
+		prerequisite = {
+			focus = fra_new_communisti_countries
+		}
+		prerequisite = {
+			focus = fra_eternal_communism
+		}
+		x = 25
+		y = 7
+				completion_reward = {
+						CHI = {
+								add_ideas = communism_from_france
+							}
+					}
+
+
+	}
+	focus = {
 		id = fra_monarchist_resistance
 		icon = GFX_goal_support_fascism
 		cost = 10
@@ -490,63 +535,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = fra_new_communisti_countries
-		icon = GFX_goal_generic_soviet_construction
-		cost = 10
-		prerequisite = {
-			focus = fra_join_in_faction_communism
-		}
-		x = 26
-		y = 6
-
-	}
-	focus = {
-		id = fra_communist_china
-		icon = GFX_goal_generic_air_doctrine
-		cost = 10
-		prerequisite = {
-			focus = fra_new_communisti_countries
-		}
-		x = 27
-		y = 7
-		completion_reward = {
-			CHI = {
-				add_ideas = communism_from_france
-			}
-		}
-
-	}
-	focus = {
-		id = fra_comunist_japan
-		icon = GFX_goal_generic_air_doctrine
-		cost = 10
-		prerequisite = {
-			focus = fra_communist_china
-		}
-		x = 27
-		y = 9
-		completion_reward = {
-			JAP = {
-				add_ideas = communism_from_france
-			}
-		}
-	}
-	focus = {
-		id = fra_communist_saudi_aravia
-		icon = GFX_goal_generic_air_doctrine
-		cost = 10
-		prerequisite = {
-			focus = fra_comunist_japan
-		}
-		x = 27
-		y = 11
-		completion_reward = {
-			SAU = {
-				add_ideas = communism_from_france
-			}
-		}
-	}
-	focus = {
 		id = fra_join_in_faction_fascism
 		icon = GFX_goal_support_fascism
 		cost = 10
@@ -587,14 +575,25 @@ focus_tree = {
 
 	}
 	focus = {
-		id = fra_pailway_to_italy
-		icon = GFX_goal_generic_construct_infrastructure
+		id = fra_faction_ITA
+		icon = GFX_goal_generic_forceful_treaty
 		cost = 10
 		prerequisite = {
 			focus = fra_italian_fascism
 		}
 		x = 30
-		y = 8
+		y = 7
+
+	}
+	focus = {
+		id = fra_pailway_to_italy
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = fra_faction_ITA
+		}
+		x = 30
+		y = 9
 
 	}
 	focus = {
@@ -605,7 +604,7 @@ focus_tree = {
 			focus = fra_pailway_to_italy
 		}
 		x = 30
-		y = 10
+		y = 11
 
 	}
 	focus = {
@@ -623,17 +622,38 @@ focus_tree = {
 
 	}
 	focus = {
-		id = fra_new_econpmic_programm
-		icon = GFX_goal_generic_forceful_treaty
+		id = fra_comunist_japan
+		icon = GFX_goal_generic_air_doctrine
 		cost = 10
 		prerequisite = {
-			focus = fra_new_political_programm
+			focus = fra_faction_chi
 		}
-		x = 20
+		x = 24
 		y = 9
-		completion_reward = {
-			add_idea_group_mobilization_laws = extensive_conscription
+				completion_reward = {
+						JAP = {
+								add_ideas = communism_from_france
+							}
+					}
+
+
+	}
+	focus = {
+		id = fra_communist_saudi_aravia
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10
+		prerequisite = {
+			focus = fra_faction_jap
 		}
+		x = 24
+		y = 11
+				completion_reward = {
+						SAU = {
+								add_ideas = communism_from_france
+							}
+					}
+
+
 	}
 	focus = {
 		id = fra_sardinia-piermont
@@ -644,28 +664,6 @@ focus_tree = {
 		}
 		x = 36
 		y = 10
-
-	}
-	focus = {
-		id = fra_ec0
-		icon = GFX_goal_generic_forceful_treaty
-		cost = 10
-		prerequisite = {
-			focus = fra_pol
-		}
-		x = 23
-		y = 11
-
-	}
-	focus = {
-		id = fra_pol
-		icon = GFX_goal_generic_forceful_treaty
-		cost = 10
-		prerequisite = {
-			focus = fraa_soc
-		}
-		x = 23
-		y = 9
 
 	}
 	focus = {
@@ -763,22 +761,28 @@ focus_tree = {
 		prerequisite = {
 			focus = fra_quarantees
 		}
-		available = {
-			SPR = { exists = yes }
-			is_puppet = no
-			NOT = { has_war_with = SPR }
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
 		x = 16
 		y = 11
-		completion_reward = {
-			give_guarantee = SPR
-			add_to_faction = SPR
-		}
-		
+				completion_reward = {
+						give_guarantee = SPR
+						add_to_faction = SPR
+					}
+
+				available = {
+						SPR = {
+								exists = yes
+							}
+						is_puppet = no
+						NOT = {
+								has_war_with = SPR
+							}
+						OR = {
+								has_government = neutrality
+								has_government = democratic
+							}
+					}
+
+
 	}
 	focus = {
 		id = fra_quarante_belgum
@@ -789,21 +793,28 @@ focus_tree = {
 			focus = fra_quarante_spain
 			focus = fra_quarante_kingdom_south_slavs
 		}
-		available = {
-			BEL = { exists = yes }
-			is_puppet = no
-			NOT = { has_war_with = BEL }
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
 		x = 13
 		y = 13
-		completion_reward = {
-			give_guarantee = BEL
-			add_to_faction = BEL
-		}
+				completion_reward = {
+						give_guarantee = BEL
+						add_to_faction = BEL
+					}
+
+				available = {
+						BEL = {
+								exists = yes
+							}
+						is_puppet = no
+						NOT = {
+								has_war_with = BEL
+							}
+						OR = {
+								has_government = neutrality
+								has_government = democratic
+							}
+					}
+
+
 	}
 	focus = {
 		id = fra_quarante_holland
@@ -814,21 +825,28 @@ focus_tree = {
 			focus = fra_quarante_spain
 			focus = fra_quarante_kingdom_south_slavs
 		}
-		available = {
-			HOL = { exists = yes }
-			is_puppet = no
-			NOT = { has_war_with = HOL }
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
 		x = 15
 		y = 13
-		completion_reward = {
-			give_guarantee = HOL
-			add_to_faction = HOL
-		}
+				completion_reward = {
+						give_guarantee = HOL
+						add_to_faction = HOL
+					}
+
+				available = {
+						HOL = {
+								exists = yes
+							}
+						is_puppet = no
+						NOT = {
+								has_war_with = HOL
+							}
+						OR = {
+								has_government = neutrality
+								has_government = democratic
+							}
+					}
+
+
 	}
 	focus = {
 		id = fra_quarante_luxemburg
@@ -839,21 +857,28 @@ focus_tree = {
 			focus = fra_quarante_kingdom_south_slavs
 			focus = fra_quarante_poland
 		}
-		available = {
-			LUX = { exists = yes }
-			is_puppet = no
-			NOT = { has_war_with = LUX }
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
 		x = 17
 		y = 13
-		completion_reward = {
-			give_guarantee = LUX
-			add_to_faction = LUX
-		}
+				completion_reward = {
+						give_guarantee = LUX
+						add_to_faction = LUX
+					}
+
+				available = {
+						LUX = {
+								exists = yes
+							}
+						is_puppet = no
+						NOT = {
+								has_war_with = LUX
+							}
+						OR = {
+								has_government = neutrality
+								has_government = democratic
+							}
+					}
+
+
 	}
 	focus = {
 		id = fra_quarante_saar
@@ -864,42 +889,27 @@ focus_tree = {
 			focus = fra_quarante_spain
 			focus = fra_quarante_poland
 		}
-		available = {
-			SAA = { exists = yes }
-			is_puppet = no
-			NOT = { has_war_with = SAA }
-			OR = {
-				has_government = neutrality
-				has_government = democratic
-			}
-		}
 		x = 19
 		y = 13
-		completion_reward = {
-			give_guarantee = SAA
-			add_to_faction = SAA
-		}
-	}
-	focus = {
-		id = fra_new_political_programm
-		icon = GFX_goal_generic_forceful_treaty
-		cost = 10
-		prerequisite = {
-			focus = fra_new_social_programm
-		}
-		x = 20
-		y = 7
+				completion_reward = {
+						give_guarantee = SAA
+						add_to_faction = SAA
+					}
 
-	}
-	focus = {
-		id = fra_eternal_communism
-		icon = GFX_goal_support_fourth_int
-		cost = 10
-		prerequisite = {
-			focus = fra_join_in_faction_communism
-		}
-		x = 24
-		y = 6
+				available = {
+						SAA = {
+								exists = yes
+							}
+						is_puppet = no
+						NOT = {
+								has_war_with = SAA
+							}
+						OR = {
+								has_government = neutrality
+								has_government = democratic
+							}
+					}
+
 
 	}
 	focus = {
@@ -907,10 +917,7 @@ focus_tree = {
 		icon = GFX_goal_generic_war_with_comintern
 		cost = 10
 		prerequisite = {
-			focus = fra_communist_saudi_aravia
-		}
-		prerequisite = {
-			focus = fra_ec0
+			focus = fra_factiob_sau
 		}
 		x = 25
 		y = 13
@@ -950,31 +957,47 @@ focus_tree = {
 
 	}
 	focus = {
-		id = fraa_soc
+		id = fra_factiob_sau
 		icon = GFX_goal_generic_forceful_treaty
 		cost = 10
 		prerequisite = {
-			focus = fra_eternal_communism
+			focus = fra_communist_saudi_aravia
 		}
-		x = 23
-		y = 7
+		x = 26
+		y = 12
+
+	}
+	focus = {
+		id = fra_faction_jap
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10
+		prerequisite = {
+			focus = fra_comunist_japan
+		}
+		x = 26
+		y = 10
+
+	}
+	focus = {
+		id = fra_faction_chi
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10
+		prerequisite = {
+			focus = fra_communist_china
+		}
+		x = 26
+		y = 8
+
+	}
+	focus = {
+		id = fra_faction_SPR
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10
+		prerequisite = {
+			focus = fra_spain_fascism
+		}
+		x = 30
+		y = 13
 
 	}
 }
-##########################################
-		available = {
-			POL = { exists = yes }
-			is_puppet = no
-			NOT = { has_war_with = POL }
-		}
-	 	prerequisite = { focus = FRA_invite_romania }
-		x = 0
-		y = 1
-		relative_position_id = FRA_invite_romania
-		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
-		completion_reward = {
-			give_guarantee = POL
-		}
