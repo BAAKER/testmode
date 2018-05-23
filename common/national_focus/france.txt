@@ -319,7 +319,7 @@ focus_tree = {
 		prerequisite = {
 			focus = fra_join_in_faction_democratic
 		}
-		x = 16
+		x = 19
 		y = 5
 
 	}
@@ -330,8 +330,8 @@ focus_tree = {
 		prerequisite = {
 			focus = fra_quarantees
 		}
-		x = 14
-		y = 11
+		x = 17
+		y = 8
 				completion_reward = {
 						give_guarantee = POL
 						add_to_faction = POL
@@ -344,36 +344,6 @@ focus_tree = {
 						is_puppet = no
 						NOT = {
 								has_war_with = POL
-							}
-						OR = {
-								has_government = neutrality
-								has_government = democratic
-							}
-					}
-
-
-	}
-	focus = {
-		id = fra_quarante_kingdom_south_slavs
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		cost = 10
-		prerequisite = {
-			focus = fra_quarantees
-		}
-		x = 18
-		y = 11
-				completion_reward = {
-						give_guarantee = YUG
-						add_to_faction = YUG
-					}
-
-				available = {
-						YUG = {
-								exists = yes
-							}
-						is_puppet = no
-						NOT = {
-								has_war_with = YUG
 							}
 						OR = {
 								has_government = neutrality
@@ -558,6 +528,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = fra_benilux
+			focus = fra_benilux
 		}
 		x = 32
 		y = 5
@@ -575,25 +546,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = fra_faction_ITA
+		id = fra_factionita
 		icon = GFX_goal_generic_forceful_treaty
 		cost = 10
 		prerequisite = {
 			focus = fra_italian_fascism
 		}
 		x = 30
-		y = 7
-
-	}
-	focus = {
-		id = fra_pailway_to_italy
-		icon = GFX_goal_generic_construct_infrastructure
-		cost = 10
-		prerequisite = {
-			focus = fra_faction_ITA
-		}
-		x = 30
-		y = 9
+		y = 8
 
 	}
 	focus = {
@@ -601,10 +561,21 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		cost = 10
 		prerequisite = {
-			focus = fra_pailway_to_italy
+			focus = fra_factionita
 		}
 		x = 30
-		y = 11
+		y = 10
+
+	}
+	focus = {
+		id = fra_faction_SPR
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10
+		prerequisite = {
+			focus = fra_spain_fascism
+		}
+		x = 30
+		y = 12
 
 	}
 	focus = {
@@ -616,9 +587,139 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = fra_international_investors
+			focus = fra_international_investors
 		}
 		x = 34
 		y = 5
+
+	}
+	focus = {
+		id = fra_catalonia
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = fra_benilux
+		}
+		x = 36
+		y = 6
+
+	}
+	focus = {
+		id = fra_marroco_sahara
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = fra_catalonia
+		}
+		x = 36
+		y = 8
+
+	}
+	focus = {
+		id = fra_sardinia-piermont
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = fra_marroco_sahara
+		}
+		x = 36
+		y = 10
+
+	}
+	focus = {
+		id = fra_saar_reinland
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = fra_sardinia-piermont
+		}
+		x = 36
+		y = 12
+
+	}
+	focus = {
+		id = fra_great_colonial_country
+		icon = GFX_goal_generic_demand_territory
+		cost = 10
+		prerequisite = {
+			focus = fra_join_in_faction_fascism
+		}
+		x = 43
+		y = 5
+
+	}
+	focus = {
+		id = fra__new_colonies
+		icon = GFX_goal_generic_position_armies
+		cost = 10
+		prerequisite = {
+			focus = fra_great_colonial_country
+		}
+		x = 41
+		y = 6
+
+	}
+	focus = {
+		id = fra_colonies_indochine
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = fra__new_colonies
+		}
+		x = 41
+		y = 8
+
+	}
+	focus = {
+		id = fra_colonies_saudi_aravia
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = fra_colonies_indochine
+		}
+		x = 41
+		y = 10
+
+	}
+	focus = {
+		id = fra_colonies_central_america
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = fra_colonies_saudi_aravia
+		}
+		x = 41
+		y = 12
+
+	}
+	focus = {
+		id = fra_quarante_kingdom_south_slavs
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10
+		prerequisite = {
+			focus = fra_quarantees
+		}
+		x = 21
+		y = 8
+				completion_reward = {
+						give_guarantee = YUG
+						add_to_faction = YUG
+					}
+
+				available = {
+						YUG = {
+								exists = yes
+							}
+						is_puppet = no
+						NOT = {
+								has_war_with = YUG
+							}
+						OR = {
+								has_government = neutrality
+								has_government = democratic
+							}
+					}
+
 
 	}
 	focus = {
@@ -653,17 +754,6 @@ focus_tree = {
 							}
 					}
 
-
-	}
-	focus = {
-		id = fra_sardinia-piermont
-		icon = GFX_goal_generic_major_war
-		cost = 10
-		prerequisite = {
-			focus = fra_marroco_sahara
-		}
-		x = 36
-		y = 10
 
 	}
 	focus = {
@@ -761,8 +851,8 @@ focus_tree = {
 		prerequisite = {
 			focus = fra_quarantees
 		}
-		x = 16
-		y = 11
+		x = 19
+		y = 8
 				completion_reward = {
 						give_guarantee = SPR
 						add_to_faction = SPR
@@ -793,8 +883,8 @@ focus_tree = {
 			focus = fra_quarante_spain
 			focus = fra_quarante_kingdom_south_slavs
 		}
-		x = 13
-		y = 13
+		x = 16
+		y = 9
 				completion_reward = {
 						give_guarantee = BEL
 						add_to_faction = BEL
@@ -825,8 +915,8 @@ focus_tree = {
 			focus = fra_quarante_spain
 			focus = fra_quarante_kingdom_south_slavs
 		}
-		x = 15
-		y = 13
+		x = 18
+		y = 9
 				completion_reward = {
 						give_guarantee = HOL
 						add_to_faction = HOL
@@ -857,8 +947,8 @@ focus_tree = {
 			focus = fra_quarante_kingdom_south_slavs
 			focus = fra_quarante_poland
 		}
-		x = 17
-		y = 13
+		x = 20
+		y = 9
 				completion_reward = {
 						give_guarantee = LUX
 						add_to_faction = LUX
@@ -889,8 +979,8 @@ focus_tree = {
 			focus = fra_quarante_spain
 			focus = fra_quarante_poland
 		}
-		x = 19
-		y = 13
+		x = 22
+		y = 9
 				completion_reward = {
 						give_guarantee = SAA
 						add_to_faction = SAA
@@ -921,39 +1011,6 @@ focus_tree = {
 		}
 		x = 25
 		y = 13
-
-	}
-	focus = {
-		id = fra_catalonia
-		icon = GFX_goal_generic_major_war
-		cost = 10
-		prerequisite = {
-			focus = fra_benilux
-		}
-		x = 36
-		y = 6
-
-	}
-	focus = {
-		id = fra_saar_reinland
-		icon = GFX_goal_generic_major_war
-		cost = 10
-		prerequisite = {
-			focus = fra_sardinia-piermont
-		}
-		x = 36
-		y = 12
-
-	}
-	focus = {
-		id = fra_marroco_sahara
-		icon = GFX_goal_generic_major_war
-		cost = 10
-		prerequisite = {
-			focus = fra_catalonia
-		}
-		x = 36
-		y = 8
 
 	}
 	focus = {
@@ -990,14 +1047,47 @@ focus_tree = {
 
 	}
 	focus = {
-		id = fra_faction_SPR
-		icon = GFX_goal_generic_forceful_treaty
+		id = fra_razvitie_of_indochina
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 10
 		prerequisite = {
-			focus = fra_spain_fascism
+			focus = fra_great_colonial_country
 		}
-		x = 30
-		y = 13
+		x = 45
+		y = 6
+
+	}
+	focus = {
+		id = fra_razvitie_of_africa
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = fra_razvitie_of_indochina
+		}
+		x = 45
+		y = 8
+
+	}
+	focus = {
+		id = fra_razvitie_of_gvianna
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = fra_razvitie_of_africa
+		}
+		x = 45
+		y = 10
+
+	}
+	focus = {
+		id = fra_razvitie_of_syria
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = fra_razvitie_of_gvianna
+		}
+		x = 45
+		y = 12
 
 	}
 }
