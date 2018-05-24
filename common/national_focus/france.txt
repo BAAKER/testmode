@@ -1020,9 +1020,17 @@ focus_tree = {
 		prerequisite = {
 			focus = fra_communist_saudi_aravia
 		}
+		available = {
+			has_government =  communism
+		}
 		x = 26
 		y = 12
-
+		completion_reward = {
+			add_opinion_modifier = {
+				target = CHI
+				modifier = happy_factions
+			}
+		}
 	}
 	focus = {
 		id = fra_faction_jap
@@ -1031,9 +1039,17 @@ focus_tree = {
 		prerequisite = {
 			focus = fra_comunist_japan
 		}
+		available = {
+			has_government =  communism
+		}
 		x = 26
 		y = 10
-
+		completion_reward = {
+			add_opinion_modifier = {
+				target = CHI
+				modifier = happy_factions
+			}
+		}
 	}
 	focus = {
 		id = fra_faction_chi
@@ -1041,6 +1057,15 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = fra_communist_china
+		}
+		available = {
+			has_government =  communism
+		}
+		completion_reward = {
+			add_opinion_modifier = {
+				target = CHI
+				modifier = happy_factions
+			}
 		}
 		x = 26
 		y = 8

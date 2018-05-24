@@ -18,4 +18,7 @@ opinion_modifiers = {
 		value = -50
 	}
 	
+	happy_factions = (
+		value = +30
+	)
 }	
